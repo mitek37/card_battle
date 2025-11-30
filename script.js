@@ -20,7 +20,7 @@ $(document).ready(function() {
                         .css('cursor', 'pointer')
                         .on('click', function() {
                             $overlayImg.attr('src', $(this).attr('src'));
-                            $overlay.stop(true,true).fadeIn(300); // フェードイン
+                            $overlay.stop(true,true).fadeIn(300);
                         });
 
                     $gallery.append($img);
@@ -48,5 +48,6 @@ $(document).ready(function() {
     loadImages('image');
     $overlay.stop(true,true).fadeOut(300);
 });
+
 
 

@@ -1,33 +1,33 @@
-// ローカル実行用（同一フォルダとして読み込める）
-const IMAGE_INDEX = 'image/index.json';
+const BASE_URL = location.origin + "/card_battle/";
+const IMAGE_INDEX = BASE_URL + "image/index.json";
 
 const gallery = document.getElementById('gallery');
 const overlay = document.getElementById('overlay');
 const overlayImg = document.getElementById('overlay-img');
 
-// 画像一覧読み込み
 async function loadImages() {
-    const res = await fetch(IMAGE_INDEX);
-    const data = await res.json();
-    const images = data.images;
+  const res = await fetch(IMAGE_INDEX);
+  const data = await res.json();
+  const images = data.images;
 
-    images.forEach(file => {
-        const img = document.createElement('img');
-        img.src = `image/${file}`;
-        img.alt = file;
+  images.forEach(file => {
+    const src = BASE_URL + "image/" + file;
 
-        img.onclick = () => {
-            overlayImg.src = img.src;
-            overlay.style.display = 'flex';
-        };
-        
-        gallery.appendChild(img);
-    });
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = file;
+
+    img.onclick = () => {
+      overlayImg.src = src;
+      overlay.style.display = 'flex';
+    };
+
+    gallery.appendChild(img);
+  });
 }
 
-// オーバーレイ閉じる（外側クリック）
 overlay.onclick = (e) => {
-    if (e.target === overlay) overlay.style.display = 'none';
+  if (e.target === overlay) overlay.style.display = 'none';
 };
 
 loadImages();

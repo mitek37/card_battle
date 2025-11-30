@@ -1,3 +1,8 @@
+@font-face {
+    font-family: '851Gochikakutto';
+    src: url('https://mitek37.github.io/card_battle/fonts/851GKKTT.TTF') format('truetype');
+}
+
 body {
     margin: 0;
     background: #f4f4f4;
@@ -6,6 +11,7 @@ body {
 
 header {
     text-align: center;
+    font-family: '851Gochikakutto', sans-serif;
     padding: 16px;
     background: #0a65d0;
     color: white;
@@ -92,3 +98,4 @@ header {
     max-height: 90%;
     border-radius: 10px;
 }
+

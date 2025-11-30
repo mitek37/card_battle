@@ -1,22 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>カードギャラリー</title>
-    <base href="/card_battle/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Viewer</title>
     <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.min.js"></script>
 </head>
 <body>
+    <header>
+        <h1 class="title">カードギャラリー</h1>
+    </header>
 
-  <h1 class="title">カードギャラリー</h1>
+    <nav class="menu">
+        <button class="menu-btn active" data-folder="image">すべて</button>
+        <button class="menu-btn" data-folder="image_chara">キャラクター</button>
+        <button class="menu-btn" data-folder="image_event">イベント</button>
+    </nav>
 
-  <div id="gallery" class="gallery"></div>
-
-  <div id="overlay" class="overlay">
-    <img id="overlay-img" src="" alt="">
-  </div>
-
-  <script src="script.js"></script>
+    <div id="modal" class="modal">
+        <img id="modal-img" src="">
+    </div>
+    <div id="gallery"></div>
+    <div id="overlay">
+        <img id="overlay-img" src="">
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+

@@ -1,33 +1,51 @@
-const BASE_URL = location.origin + "/card_battle/";
-const IMAGE_INDEX = BASE_URL + "image/index.json";
+$(document).ready(function() {
+    const $BASE_URL = location.origin + "/card_battle/";
 
-const gallery = document.getElementById('gallery');
-const overlay = document.getElementById('overlay');
-const overlayImg = document.getElementById('overlay-img');
+    const $gallery = $('#gallery');
+    const $overlay = $('#overlay');
+    const $overlayImg = $('#overlay-img');
+    const $buttons = $('.menu-btn');
 
-async function loadImages() {
-  const res = await fetch(IMAGE_INDEX);
-  const data = await res.json();
-  const images = data.images;
+    function loadImages(folder) {
+        $gallery.empty();
 
-  images.forEach(file => {
-    const src = BASE_URL + "image/" + file;
+        $.getJSON($BASE_URL + '/' + folder + '/index.json')
+            .done(function(data) {
+                const images = data.images;
 
-    const img = document.createElement('img');
-    img.src = src;
-    img.alt = file;
+                images.forEach(file => {
+                    const $img = $('<img>')
+                        .attr('src', folder + '/' + file)
+                        .attr('alt', file)
+                        .css('cursor', 'pointer')
+                        .on('click', function() {
+                            $overlayImg.attr('src', $(this).attr('src'));
+                            $overlay.stop(true,true).fadeIn(300); // フェードイン
+                        });
 
-    img.onclick = () => {
-      overlayImg.src = src;
-      overlay.style.display = 'flex';
-    };
+                    $gallery.append($img);
+                });
+            })
+            .fail(function(jqxhr, textStatus, error) {
+                console.error("JSON読み込み失敗:", textStatus, error);
+            });
+    }
 
-    gallery.appendChild(img);
-  });
-}
+    $overlay.on('click', function(e) {
+        if (e.target === this) {
+            $overlay.stop(true,true).fadeOut(300);
+        }
+    });
 
-overlay.onclick = (e) => {
-  if (e.target === overlay) overlay.style.display = 'none';
-};
+    $buttons.on('click', function() {
+        $buttons.removeClass('active');
+        $(this).addClass('active');
 
-loadImages();
+        const folder = $(this).data('folder');
+        loadImages(folder);
+    });
+
+    loadImages('image');
+    $overlay.stop(true,true).fadeOut(300);
+});
+

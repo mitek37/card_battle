@@ -23,6 +23,19 @@ header {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+h1 {
+    font-family: '851Gochikakutto', sans-serif;
+}
+
+h1,h2,h3 {
+    padding-left: 20px;
+}
+
+p {
+    padding-left: 30px;
+}
+
+
 .menu-container {
     position: absolute; 
     left: 2px;
@@ -161,3 +174,4 @@ header {
     max-height: 90%;
     border-radius: 10px;
 }
+

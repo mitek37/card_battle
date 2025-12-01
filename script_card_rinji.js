@@ -4,7 +4,7 @@ $(document).ready(function() {
     const $gallery = $('#gallery');
     const $overlay = $('#overlay');
     const $overlayImg = $('#overlay-img');
-    const $buttons = $('.menu-btn');
+    const $buttons = $('.cs-btn');
 
     function loadImages(folder) {
         $gallery.empty();

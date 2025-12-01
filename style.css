@@ -1,0 +1,84 @@
+@font-face {
+    font-family: '851Gochikakutto';
+    src: url(https://mitek37.github.io/card_battle/fonts/851GKKTT.TTF), sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1,h2,h3 {
+    padding-left: 30px;
+}
+
+p {
+    padding-left: 50px;
+}
+
+title {
+    margin: 0;
+    position: center;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    font-family: '851Gochikakutto';
+    background-color: #0a65d0;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.menu-container {
+    position: absolute; 
+    left: 2px;
+}
+
+.menu-button {
+    width: 80px;
+    height: 80px;
+    background: #162a9b;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 80px;  
+    left: 0;
+    background: #3951d6;
+    width: 160px;
+    border-radius: 0 0 4px 4px;
+}
+
+.dropdown-menu li {
+    border-bottom: 3px solid #162a9b;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #fff;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background: #6c9aff;
+}

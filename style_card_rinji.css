@@ -38,11 +38,11 @@ header {
     cursor: pointer;
 }
 
-.menu-btn:hover {
+.cs-btn:hover {
     background: #cccccc;
 }
 
-.menu-btn.active {
+.cs-btn.active {
     background: #34c6f3;
     color: white;
 }
@@ -102,6 +102,7 @@ header {
     max-height: 90%;
     border-radius: 10px;
 }
+
 
 
 

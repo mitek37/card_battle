@@ -90,7 +90,7 @@ p {
 .title {
     padding-top: 20px;
     padding-left: 40px;
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .charasort {
@@ -174,5 +174,6 @@ p {
     max-height: 90%;
     border-radius: 10px;
 }
+
 
 

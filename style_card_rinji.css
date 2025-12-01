@@ -15,9 +15,6 @@ header {
     font-family: '851Gochikakutto';
     background-color: #0a65d0;
     color: #fff;
-    position: relative;
-    display: flex;
-    align-items: center;
     justify-content: center;
     padding-left: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -102,6 +99,7 @@ header {
     max-height: 90%;
     border-radius: 10px;
 }
+
 
 
 

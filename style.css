@@ -15,7 +15,6 @@ header {
     height: 80px;
     text-align: center;
     font-family: '851Gochikakutto', sans-serif;
-    padding-left: 40px;
     background: #0a65d0;
     color: white;
     justify-content: center;
@@ -90,6 +89,7 @@ p {
 
 .title {
     padding-top: 20px;
+    padding-left: 40px;
     font-size: 50px;
 }
 
@@ -174,4 +174,5 @@ p {
     max-height: 90%;
     border-radius: 10px;
 }
+
 

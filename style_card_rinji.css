@@ -81,6 +81,7 @@ header {
     border-radius: 10px;  
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
     cursor: default;    
+    justify-content: center;
     transition: transform 0.3s ease;
 }
 
@@ -101,6 +102,7 @@ header {
     max-height: 90%;
     border-radius: 10px;
 }
+
 
 
 

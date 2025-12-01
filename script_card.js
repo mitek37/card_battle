@@ -9,7 +9,7 @@ $(document).ready(function() {
     function loadImages(folder) {
         $gallery.empty();
 
-        $.getJSON($BASE_URL +　folder + '/index.json')
+        $.getJSON($BASE_URL + folder + '/index.json')
             .done(function(data) {
                 const images = data.images;
 
@@ -61,6 +61,7 @@ $(document).ready(function() {
         $(".dropdown-menu").slideUp(200);
     });
 });
+
 
 
 

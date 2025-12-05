@@ -6,7 +6,11 @@
 
 body {
     margin: 0;
-    background: #f4f4f4;
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/bg.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+
     font-family: sans-serif;
 }
 
@@ -24,6 +28,12 @@ header {
 
 h1 {
     font-family: '851Gochikakutto', sans-serif;
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/h1tag.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 40px;
+    padding-top: 10px;
 }
 
 h1,h2,h3 {
@@ -34,6 +44,20 @@ p {
     padding-left: 30px;
 }
 
+img {
+    padding-left: 30px;
+    width: 80%;
+    max-width: 600px;
+}
+
+#gotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 140px;
+    cursor: pointer;
+    z-index: 9999;
+}
 
 .menu-container {
     position: absolute; 
@@ -85,6 +109,14 @@ p {
 
 .dropdown-menu a:hover {
     background: #6c9aff;
+}
+
+.go-battle {
+    background: #f34ac0;
+}
+
+.go-battle a:hover {
+    background: #ff8adc;
 }
 
 .title {
@@ -174,7 +206,6 @@ p {
     max-height: 90%;
     border-radius: 10px;
 }
-
 
 
 

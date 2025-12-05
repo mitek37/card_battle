@@ -6,22 +6,51 @@
 
 body {
     margin: 0;
-    background: #f4f4f4;
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/bg.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+
     font-family: sans-serif;
 }
 
-/* メニュー（PC左 / スマホ上） */
 header {
     width: 100%;
     height: 80px;
     text-align: center;
     font-family: '851Gochikakutto', sans-serif;
-    padding-left: 40px;
     background: #0a65d0;
     color: white;
     justify-content: center;
     margin: 0;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-family: '851Gochikakutto', sans-serif;
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/h1tag.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 40px;
+    padding-top: 10px;
+}
+
+h1,h2,h3 {
+    padding-left: 20px;
+}
+
+p {
+    padding-left: 30px;
+}
+
+#gotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 140px;
+    cursor: pointer;
+    z-index: 9999;
 }
 
 .menu-container {
@@ -76,9 +105,18 @@ header {
     background: #6c9aff;
 }
 
+.go-battle {
+    background: #f34ac0;
+}
+
+.go-battle a:hover {
+    background: #ff8adc;
+}
+
 .title {
-    padding-top: 20px;
-    font-size: 50px;
+    padding-top: 25px;
+    padding-left: 70px;
+    font-size: 35px;
 }
 
 .charasort {
@@ -119,30 +157,29 @@ header {
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-/* オーバーレイ全体 */
 #overlay {
-    display: none; /* 最初は非表示 */
-    position: fixed; /* 画面に固定 */
+    display: none; 
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.7); /* 背景を暗く */
-    justify-content: center; /* 中央寄せ */
-    align-items: center;     /* 縦中央 */
-    z-index: 1000;           /* ギャラリーより前面 */
-    cursor: pointer;          /* 背景クリックで閉じるイメージ */
-    display: flex;            /* flex で中央寄せ */
+    background: rgba(0,0,0,0.7); 
+    justify-content: center; 
+    align-items: center;  
+    z-index: 1000;  
+    cursor: pointer;      
+    display: flex;      
 }
 
 /* 拡大画像 */
 #overlay-img {
-    max-width: 90%;           /* 画面幅の90%以内 */
-    max-height: 90%;          /* 画面高さの90%以内 */
-    border-radius: 10px;      /* 角を丸める */
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px; 
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    cursor: default;          /* 画像自体はクリックで閉じない */
-    transition: transform 0.3s ease; /* 拡大縮小のアニメーション */
+    cursor: default;
+    transition: transform 0.3s ease; 
 }
 
 
@@ -163,3 +200,7 @@ header {
     max-height: 90%;
     border-radius: 10px;
 }
+
+
+
+

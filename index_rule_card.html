@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>うちのこカードバトル</title>
+    <title>うちのこカードバトル_カードと盤面</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,25 +11,78 @@
         <div class="menu-container">
             <div class="menu-button">MENU</div>
             <ul class="dropdown-menu">
-                <li><a href="https://mitek37.github.io/card_battle/index.html">TOP</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index.html">HOME</a></li>
                 <li><a href="https://mitek37.github.io/card_battle/index_cardgallery.html">カードギャラリー</a></li>
                 <li><a href="#">ルール</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index_rule_card.html">・カードと編成</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_card.html">・カードと盤面</a></li>
                 <li><a href="https://mitek37.github.io/card_battle/index_rule_battle.html">・試合の流れ</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_effect.html">・貫通と状態異常</a></li>
                 <li><a href="https://mitek37.github.io/card_battle/index_rule_word.html">・用語解説</a></li>
+                <li class="go-battle"><a href="https://ccfolia.com/rooms/oqDzkpjZo">バトル場へ</a></li>
             </ul>
         </div>
-        <div class="title">カードと編成</div>
+        <div class="title">カードと盤面</div>
     </header>
-    <h1>ページ制作中...</h1>
-    <p>完成をお待ちください！　　by MITEK37<br><a href="https://mitek37.github.io/card_battle/index.html">TOPへ戻る</a></p>
+    <h1>カードの種類とデッキ</h1>
+    <p>
+        カードは大きく分けて、<b>キャラクターカード</b>と<b>イベントカード</b>の2種類があります。
+    </p>
+
+    <div>
+        <img src="https://mitek37.github.io/card_battle/image/ryuu.png" alt="キャラクターカード" style="width: 200px;">
+        <img src="https://mitek37.github.io/card_battle/image/eiyouzai.png" alt="イベントカード" style="width: 200px;">
+    </div>
+
+        <h3>・キャラクターカード</h3>
+        <p>コストを消費してフィールド(自陣)に召喚し、敵陣と相手プレイヤーに攻撃を仕掛けることができるカード。残りライフが0になるなどの条件を満たすとロストとなり、墓場に行く。</p>
+
+        <h3>・イベントカード</h3>
+        <p>コストを消費して発動し(一部除く)、様々な効果を引き起こすカード。効果を発揮し終わると墓場に行く。</p>
+
+    <p>
+        この2種類のカードを使ってバトルを優位にしていき、相手のHPを0にすれば勝利です。
+        また、バトルに使えるカードはカード一覧の中から自由に使えるわけではなく、
+        「お互いに予めどんなカード達を使いたいかを選んで山札を作り、それをシャッフルして引いていく」
+        という形になります。この、選んだカード達を集めたものを<b>「デッキ」</b>と呼びます。お互いの戦略や
+        好みが出やすい、面白い部分です。
+    </p>
+    <p>
+        デッキの上限枚数はバランス調整によって変わると思いますが、ひとまず<b>40枚まで</b>としましょう！下限はありません。
+        山札が0枚になると、墓場にあるイベントカードをシャッフルして新しい山札を作ります。(墓場に行ったキャラクターカードは新しい山札に加わりません。)
+        そのため、デッキの枚数が少ないほど、山札がすぐ切れるため、デッキが回る周期が早くなります！
+    </p>
+
+    <h1>盤面の見方</h1>
+    <p>ゲームで使われる盤面は、こんな感じになってます。</p>
+    <img src="https://mitek37.github.io/card_battle/image_sys/bord.png" alt="盤面の様子">
+
+        <h3>・山札</h3>
+        <p>シャッフルしたデッキを置いておく場所。ここからカードを引き、手札に加えることを<b>ドロー</b>と呼ぶ。</p>
+
+        <h3>・手札</h3>
+        <p>そのままの意味。ドローしたカードを蓄えて、どのカードをコストを支払ってだすのか選ぶ場所。</p>
+
+        <h3>・フィールド</h3>
+        <p>
+            盤面の中央部分にある、キャラクターを召喚する場所。
+            マスによって1～4の番号が振られており、
+            上4マスと下4マスで、自陣と敵陣に分かれている。
+            バトルフェイズでは、お互いが召喚したキャラクターがここでバトルを繰り広げる。
+        </p>
+
+        <h3>・コストゲージ</h3>
+        <p>自身の残りコストを示すゲージ。右側の数字が現在のコスト上限。左側の数字が残りのコスト数。</p>
+
+        <h3>・残りHP</h3>
+        <p>プレイヤー自身の残りHP。ここが0になると、敗北となる。</p>
+
+        <h3>・墓場</h3>
+        <p>ロストしたキャラクター、または発動し終わったイベントカードを移動する場所。</p>
+
+    <p>ココフォリアでは、スクリーン全体の回転を個々人で行うことはできなさそうなので、上と下好きな方を選んで「自陣側」にします。</p>
+
+    <img id="gotop" src="https://mitek37.github.io/card_battle/image_sys/gotop.png" alt="ページTOPへ">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-

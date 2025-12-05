@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>うちのこカードバトル_貫通と状態異常</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <div class="menu-button">MENU</div>
+            <ul class="dropdown-menu">
+                <li><a href="https://mitek37.github.io/card_battle/index.html">HOME</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_cardgallery.html">カードギャラリー</a></li>
+                <li><a href="#">ルール</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_card.html">・カードと盤面</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_battle.html">・試合の流れ</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_effect.html">・貫通と状態異常</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_word.html">・用語解説</a></li>
+                <li class="go-battle"><a href="https://ccfolia.com/rooms/oqDzkpjZo">バトル場へ</a></li>
+            </ul>
+        </div>
+        <div class="title">貫通と状態異常</div>
+    </header>
+    <h1>状態異常</h1>
+        <p>
+            キャラクターには、状態異常と呼ばれるバフ・デバフがかかることがあります。
+            状態異常は指定のターン数経過するか、別の状態異常で上書きすることで解除することができます。
+            カードの効果によっては、状態異常を解除できるものも存在します。
+        </p>
+
+        <img src="https://mitek37.github.io/card_battle/image_sys/effect.png" alt="状態異常一覧">
+
+    <h1>貫通属性</h1>
+        <p>
+            貫通属性のついたダメージは、キャラクターやカードの効果、状態異常などによるダメージ軽減の影響を受けません。
+            また通常の攻撃では、キャラクターをロストさせた際に余った、余分なダメージ(超過ダメージ)はそのまま消えますが、
+            貫通属性のついたダメージは、超過ダメージをそのまま他の生きているキャラクターや相手プレイヤ自身に充てることができます。
+            (超過ダメージそのものにも、貫通属性が付いています。)
+            具体的なルールとしては、
+        </p>
+
+        <p><b>・貫通攻撃先のキャラクターがロストした場合、敵陣のそのマスから次以降の番号のマスで最初に当たるキャラクターに超過ダメージが入る
+            (ロストしたキャラクターが4番いた場合は、そのまま循環して、1番に回る。)</b></p>
+
+        <p><b>・貫通攻撃先のキャラクターがロストし、敵陣に他に生きているキャラクターがいない場合、相手プレイヤーのHPに超過ダメージが入る</b></p>
+
+        <h3>例</h3>
+
+        <img src="https://mitek37.github.io/card_battle/image_sys/kan1.png" alt="貫通属性その1">
+
+        <p>上の画像の場合、7番にいるトラに超過ダメージが入ります。</p>
+
+        <img src="https://mitek37.github.io/card_battle/image_sys/kan2.png" alt="貫通属性その2">
+
+        <p>上の画像の場合、5番にいるパンドラに超過ダメージが入ります。</p>
+
+        <img src="https://mitek37.github.io/card_battle/image_sys/kan3.png" alt="貫通属性その3">
+
+        <p>上の画像の場合、相手プレイヤーのHPに超過ダメージが入ります。</p>
+
+    <img id="gotop" src="https://mitek37.github.io/card_battle/image_sys/gotop.png" alt="ページTOPへ">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

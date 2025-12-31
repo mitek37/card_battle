@@ -1,21 +1,21 @@
 $(document).ready(function() {
-    const $BASE_URL = location.origin + "/card_battle/";
+    const $BASE_URL = "https://mitek37.github.io/card_battle/image/index_";
 
     const $gallery = $('#gallery');
     const $overlay = $('#overlay');
     const $overlayImg = $('#overlay-img');
     const $buttons = $('.cs-btn');
 
-    function loadImages(folder) {
+    function loadImages(cate) {
         $gallery.empty();
 
-        $.getJSON($BASE_URL + folder + '/index.json')
+        $.getJSON($BASE_URL + cate + '.json')
             .done(function(data) {
                 const images = data.images;
 
                 images.forEach(file => {
                     const $img = $('<img>')
-                        .attr('src', folder + '/' + file)
+                        .attr('src', 'image' + '/' + file)
                         .attr('alt', file)
                         .css('cursor', 'pointer')
                         .on('click', function() {
@@ -41,11 +41,11 @@ $(document).ready(function() {
         $buttons.removeClass('active');
         $(this).addClass('active');
 
-        const folder = $(this).data('folder');
-        loadImages(folder);
+        const cate = $(this).data('folder');
+        loadImages(cate);
     });
 
-    loadImages('image');
+    loadImages('all');
     $overlay.stop(true,true).fadeOut(300);
 
     $(".menu-button").on("click", function (e) {
@@ -65,7 +65,6 @@ $(document).ready(function() {
         $("html, body").animate({ scrollTop: 0 }, 400);
     });
 });
-
 
 
 

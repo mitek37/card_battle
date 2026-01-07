@@ -1,12 +1,15 @@
 {
     "images": [
         "ach.png",
+        "bis.png",
         "bya.png",
+        "chd.png",
         "dol.png",
         "fus.png",
         "gnv.png",
         "hch.png",
         "hye.png",
+        "kne.png",
         "knl.png",
         "knv.png",
         "kok.png",
@@ -21,6 +24,7 @@
         "raf.png",
         "rei.png",
         "ria.png",
+        "rok.png",
         "rrs.png",
         "ruk.png",
         "ryu.png",
@@ -33,6 +37,8 @@
         "sun.png",
         "syg.png",
         "tor.png",
-        "urz.png"
+        "umm.png",
+        "urz.png",
+        "you.png"
     ]
 }

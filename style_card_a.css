@@ -1,0 +1,255 @@
+
+@font-face {
+    font-family: '851Gochikakutto';
+    src: url('https://mitek37.github.io/card_battle/fonts/851GKKTT.TTF') format('truetype');
+}
+
+body {
+    margin: 0;
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/bg.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-family: '851Gochikakutto', sans-serif;
+    background: #0a65d0;
+    color: white;
+    justify-content: center;
+    margin: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-family: '851Gochikakutto', sans-serif;
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/h1tag.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 40px;
+    padding-top: 10px;
+}
+
+h1,h2,h3 {
+    padding-left: 20px;
+}
+
+p {
+    padding-left: 30px;
+}
+
+#gotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 140px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.menu-container {
+    position: absolute; 
+    left: 2px;
+    
+}
+
+.menu-button {
+    width: 80px;
+    height: 80px;
+    background: #162a9b;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px
+}
+
+.dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 80px;  
+    left: 0;
+    background: #3951d6;
+    width: 200px;
+    border-radius: 0 0 4px 4px;
+}
+
+.dropdown-menu li {
+    border-bottom: 3px solid #162a9b;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #fff;
+    padding: 12px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background: #6c9aff;
+}
+
+.go-battle {
+    background: #f34ac0;
+}
+
+.go-battle a:hover {
+    background: #ff8adc;
+}
+
+.title {
+    padding-top: 25px;
+    padding-left: 70px;
+    font-size: 35px;
+}
+
+.cardsort {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.charasort {
+    display: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.eventsort {
+    display: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cs-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.cs-btn:hover {
+    background: #cccccc;
+}
+
+.cs-btn.active {
+    background: #34c6f3;
+    color: white;
+}
+
+.ch-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.ch-btn:hover {
+    background: #cccccc;
+}
+
+.ch-btn.active {
+    background: #34c6f3;
+    color: white;
+}
+
+.ev-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.ev-btn:hover {
+    background: #cccccc;
+}
+
+.ev-btn.active {
+    background: #34c6f3;
+    color: white;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+#gallery img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+#overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7); 
+    justify-content: center; 
+    align-items: center;  
+    z-index: 1000;  
+    cursor: pointer;      
+    display: flex;      
+}
+
+/* 拡大画像 */
+#overlay-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    cursor: default;
+    transition: transform 0.3s ease; 
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+
+

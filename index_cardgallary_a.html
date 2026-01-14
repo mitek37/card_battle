@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>うちのこカードバトル</title>
+    <link rel="stylesheet" href="style_card_a.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <div class="menu-button">MENU</div>
+            <ul class="dropdown-menu">
+                <li><a href="https://mitek37.github.io/card_battle/index.html">HOME</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_newcard.html">新着カード</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_cardgallery.html">カードギャラリー</a></li>
+                <li><a href="#">ルール</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_card.html">・カードと盤面</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_battle.html">・試合の流れ</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_effect.html">・貫通と状態異常</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_word.html">・用語解説</a></li>
+                <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_deck.html">デッキの作り方</a></li>
+                <li class="go-battle"><a href="https://ccfolia.com/rooms/oqDzkpjZo">バトル場へ</a></li>
+            </ul>
+        </div>
+        <div class="title">ギャラリー</div>
+    </header>
+
+    <nav class="cardsort">
+        <button class="cs-btn active" data-folder="all">すべて</button>
+        <button class="cs-btn" data-folder="chara">キャラクター</button>
+        <button class="cs-btn" data-folder="event">イベント</button>
+    </nav>
+    <nav class="charasort">
+        <button class="ch-btn active" data-folder="chara">すべて</button>
+        <button class="ch-btn" data-folder="37">37</button>
+        <button class="ch-btn" data-folder="96">96</button>
+        <button class="ch-btn" data-folder="600">600</button>
+        <button class="ch-btn" data-folder="4023">4023</button>
+        <button class="ch-btn" data-folder="5170">5170</button>
+        <button class="ch-btn" data-folder="8626">8626</button>
+        <button class="ch-btn" data-folder="10005">10005</button>
+        <button class="ch-btn" data-folder="c_rainbow">虹</button>
+        <button class="ch-btn" data-folder="attack">アタック</button>
+        <button class="ch-btn" data-folder="guard">ガード</button>
+        <button class="ch-btn" data-folder="support">サポート</button>
+        <button class="ch-btn" data-folder="tricky">トリッキー</button>
+    </nav>
+    <nav class="eventsort">
+        <button class="ev-btn active" data-folder="event">すべて</button>
+        <button class="ev-btn" data-folder="kougeki">攻撃</button>
+        <button class="ev-btn" data-folder="shien">支援</button>
+        <button class="ev-btn" data-folder="kougeki">装備</button>
+        <button class="ev-btn" data-folder="shien">特殊</button>
+        <button class="ev-btn" data-folder="shien">虹</button>
+    </nav>
+
+    <div id="modal" class="modal">
+        <img id="modal-img" src="">
+    </div>
+    <div id="gallery"></div>
+    <div id="overlay">
+        <img id="overlay-img" src="">
+    </div>
+    <script src="script_card_a.js"></script>
+</body>
+</html>

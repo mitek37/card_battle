@@ -175,6 +175,16 @@ p {
     color: white;
 }
 
+.ch-btn.sp-37.active {
+    background: rgb(148,239,241);
+    color: black;
+}
+
+.ch-btn.sp-96.active {
+    background: rgb(148,239,241);
+    color: black;
+}
+
 .ev-btn {
     padding: 8px 16px;
     font-size: 14px;

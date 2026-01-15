@@ -1,9 +1,13 @@
 {
     "images": [
+        "bis.png",
         "bya.png",
+        "chd.png",
         "dol.png",
         "fox.png",
+        "gnv.png",
         "hye.png",
+        "kne.png",
         "knl.png",
         "knv.png",
         "kok.png",
@@ -15,10 +19,14 @@
         "pan.png",
         "raf.png",
         "rei.png",
+        "rok.png",
         "ryu.png",
         "sag.png",
         "sdn.png",
+        "sgr.png",
         "skb.png",
-        "ssr.png"
+        "ssr.png",
+        "tor.png",
+        "umm.png"
     ]
 }

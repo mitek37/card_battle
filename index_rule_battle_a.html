@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>うちのこカードバトル_試合の流れ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <div class="menu-button">MENU</div>
+            <ul class="dropdown-menu">
+                <li><a href="https://mitek37.github.io/card_battle/index.html">HOME</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_newcard.html">新着カード</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_cardgallery.html">カードギャラリー</a></li>
+                <li><a href="#">ルール</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_card.html">・カードと盤面</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_battle.html">・試合の流れ</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_effect.html">・貫通と状態異常</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_word.html">・用語解説</a></li>
+                <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_deck.html">デッキの作り方</a></li>
+                <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_cardidea.html">カード案について</a></li>
+            </ul>
+        </div>
+        <div class="title">試合の流れ</div>
+    </header>
+    
+    <h1>試合の前に</h1>
+    <p>
+        お互いに、組んだデッキをシャッフルし、山札として置きます。<br>
+        ココフォリアでは、山札を作成した時点で中身はシャッフルされるので、そのまま山札にドラッグするだけで大丈夫です。
+    </p>
+
+    <h1>いざ勝負！</h1>
+        <p>
+            お互いの準備が揃ったら、いざ<b>試合開始！！</b><br>
+            ダイスを振って先攻後攻を決めます。
+            先攻が下のフィールド、後攻が上のフィールドを使用して戦います。
+        </p>
+        <img src="https://mitek37.github.io/card_battle/image_sys/kaimaku.png" alt="開幕の写真">
+        <p>
+            先攻後攻が決まったら、最初はお互いに山札からカードを3枚ドローします。
+            これを初手ドローと言います。<br>
+            この時、（この初手ドローだけ限定の機能で）引いたカードのうち気に入らないものがあれば、選んで山札に戻し、選んだ枚数だけ山札から引き直すことができます。
+            いわゆるポーカーの最初のカード交換みたいなものです。
+        </p>
+        <img src="https://mitek37.github.io/card_battle/image_sys/drow.png" alt="初手ドローの写真">
+
+        <p>
+            ドローする際は、山札の上で右クリックすることで引くことができます。
+            カード交換が済んだら、最終的に引いたカードを手札欄に移動させておきましょう。
+        </p>
+
+    <h1>初手後の流れ</h1>
+        <p>初手ドローが終わった後は、基本的に以下の流れで試合が進んでいきます。</p>
+        <img src="https://mitek37.github.io/card_battle/image_sys/flow1.png" alt="試合の流れの写真1">
+        <img src="https://mitek37.github.io/card_battle/image_sys/flow2.png" alt="試合の流れの写真1">
+        <h3>・アクションフェイズ</h3>
+        <p>山札からカードを1枚ドローし、コストを消費してキャラクターを召喚したり、イベントカードを場に出して発動したりするフェイズ。</p>
+
+        <h3>・バトルフェイズ</h3>
+        <p>フィールドに召喚されたキャラクターが、攻撃をしかけたり、味方を回復させたりなど、バトルを繰り広げるフェイズ。</p>
+
+        <p>ターン終了時の処理は後述します。</p>
+
+    <h1 style="padding-left: 5px; width: 83%;">アクションフェイズ</h1>
+
+        <p>
+            ターン開始後、まずは先攻のアクションフェイズから始まります。<br>
+            山札からカードを1枚ドローし、手札に加えます。コスト上限は最初(1ターン目)は<b>4</b>からスタートします、1ターン終わるごとに上限が5,6,7…と増えていきます。
+        </p>
+        <p>
+            ドローしたら、手札の中から召喚するキャラクターカード、または場に出すイベントカードを選びます。<br>
+            キャラクターを召喚する際は、自陣フィールドの空いている好きな番地(マス)に召喚することができます。もちろん<b>コストが余っていたら必ず
+            消費しなければならないわけではなく</b>、コストを温存したままアクションフェイズを終えることも可能です。<br>
+            （現在の残りコストで発動できるカードがない場合、自動で自身のアクションフェイズを終了します。）
+        </p>
+        <img src="https://mitek37.github.io/card_battle/image_sys/action1.png" alt="アクションフェイズの写真1">
+        <p>
+            カードを場に出したら、クリックして「Oキー」または「右クリック→全体に公開する」で
+            相手にも見れるよう公開します。
+        <p>
+            先攻のアクションフェイズ終了後は普通、先攻のバトルフェイズに移るのですが、1ターン目のみ、先攻はアクションフェイズのみで終了し、後攻のアクションフェイズが始まります。
+        </p>
+        <img src="https://mitek37.github.io/card_battle/image_sys/action2.png" alt="アクションフェイズの写真2">
+        <p>
+            後攻のアクションフェイズの場合も同様に行います。<br>
+            相手のアクションフェイズ中は基本自分は行動することができません。
+            相手が一体何を企ててくるのかじっくり観察して楽しみましょう。
+        </p>
+
+    <h1>バトルフェイズ</h1>
+        <p>
+            1ターン目の先攻のフェイズ以外は、基本的にアクションフェイズの後はバトルフェイズに移行します。
+        </p>
+
+        <p>
+            バトルフェイズ中は、基本的に<b>カードを場に出すことができません。</b>
+            自陣フィールドに召喚されたキャラクターを駆使して、相手に攻撃をしかけるなどします。
+        </p>
+
+        <img src="https://mitek37.github.io/card_battle/image_sys/battle.png" alt="バトルフェイズ開始の写真">
+
+        <p>バトルフェイズ時に取れる行動は以下の二つです。</p>
+
+        </p>
+            <h3>・キャラクターを選択して攻撃・回復</h3>
+            <p>コストを1消費し、自陣に召喚されているキャラクターを選択して、【バトルフェイズ時】の効果を発動します。この時、<b>行動ダイス</b>と呼ばれるダイスを振ります(後述)。</p>
+
+            <h3>・キャラクターの場所を入れ替える</h3>
+            <p>コストを1消費し、キャラクターを1人指定して、自陣フィールド上の任意の番地に移動させることができます。移動先に既にキャラクターがいる場合、そのキャラクターと場所が入れ替わります。</p>
+
+        <p>
+            上記の通り、<b>一つの行動には1コストを消費します。</b>コストが切れるまで何度でも行動できます。
+            しかし、<b>同じキャラクターを2回以上選択して攻撃・回復させることはできません。</b><br>
+            （特殊効果の発動はカウントしません。）<br>
+        </p>
+        <img src="https://mitek37.github.io/card_battle/image_sys/attack_chance.png" alt="攻撃中の写真">
+        <p>
+            上の画像では、「キャラクターを選択して攻撃・回復」を選び、コストを1消費し自陣にいるラフレシアを選択して、敵陣にいるリュウに攻撃をしかけています。
+            攻撃・回復を仕掛けると選択したキャラは、分かりやすいように、外側に下げておきます。
+            この時、<b>行動ダイス</b>というものを振ります。
+        </p>
+        <p>
+            行動ダイスとは、<b>キャラクターが相手を指定して攻撃や回復などを行う前に振る1D6</b>の事です。ダイスの結果によって、
+            その行動が「成功」するか「失敗」するかが決まります。<br>
+            成功すると、カードに書かれている【バトルフェイズ時】の効果がちゃんと発動します。
+            ただし失敗すると、【バトルフェイズ時】の効果が発動しないまま、そのキャラの行動が終了となります。
+        </p>
+        <p>
+            写真の(無強化のカードの)例では、<br>
+            「3～6」が出れば行動に成功。「1、2」が出ると行動に失敗となります。
+        </p>
+
+        <img src="https://mitek37.github.io/card_battle/image_sys/attack_seikou.png" alt="攻撃成功の写真">
+
+        <p>
+            今回は3が出たため、ラフレシアが攻撃に成功したようです。
+            リュウの残りライフが減っているのがわかります。<br>
+            もし、攻撃などによってキャラクターのライフが0になった場合、そのキャラクターは<b>ロスト</b>となり、墓場に送られます。
+        </p>
+        <p>
+            敵陣にいるキャラクターをロストさせると、<b>そのキャラクターの召喚コスト分のダメージを相手のHPに与えることができます。</b><br>
+            例えば、「コスト3のキャラクター」をロストさせた場合、「相手HPに3ダメージ」が入ります。<br>
+            このようにして、相手のプレイヤーのHPを0まで削り切れば、勝利となります。
+        </p>
+
+        <p>
+            ちなみに、行動ダイスはキャラクターが強化されることによって、成功の許容が広くなっていきます。<br>
+            詳しくは<a href="https://mitek37.github.io/card_battle/index_rule_card.html">カードと盤面ページ</a>の
+            召喚のルールを参考にしてください。
+        </p>
+
+        <p>簡潔にまとめると、</p>
+        <h3>・行動は「キャラで攻撃・回復」か「場所替え」！</h3>
+        <h3>・行動にはコストが1かかる！</h3>
+        <h3>・キャラを倒すと相手HPにダメージ！</h3>
+        <p>です！</p>
+        
+        <img src="https://mitek37.github.io/card_battle/image_sys/player_attack_chance.png" alt="プレイヤー攻撃のチャンス">
+        <p>
+            つづいて、上の画像では、百夜を選択して攻撃を仕掛けようとしていますが、敵陣にはキャラクターが1人もいません。
+            この場合は、<b>相手プレイヤーのHPに直接攻撃を仕掛けることができます。</b><br>
+            これを<b>ダイレクトアタック</b>と呼びます。
+        </p>
+
+        <img src="https://mitek37.github.io/card_battle/image_sys/player_attack_seikai.png" alt="プレイヤーに攻撃">
+        <p>
+            百夜の攻撃により、相手プレイヤーのHPが4減りました。
+        </p>
+        <p>
+            ちなみに、攻撃で与えるダメージが4で攻撃先のキャラクターの残りライフが2の場合、
+            超過した2ダメージが他のキャラクターに入ったり、相手プレイヤーのHPに入ったりすることはありません。<br>
+            しかし、<b>貫通属性のついた攻撃（貫通攻撃）</b>の場合、超過したダメージも入ります。詳しくは、
+            <a href="https://mitek37.github.io/card_battle/index_rule_effect.html">貫通と状態異常ページ</a>を参考にしてください。
+        </p>
+
+        <p>
+            一通りの行動を終え、バトルフェイズが終了したら、ターン終了時の行動を行います。
+            ターン終了時のフローは以下の通りです。
+        </p>
+
+        <img src="https://mitek37.github.io/card_battle/image_sys/end_flow.png" alt="終了時の流れ">
+
+        <p>
+            ターン終了時にはまず、<b>コスト上限を+1</b>し、<b>残りコストを6+(行動してないキャラの数)回復</b>します。
+            <p>
+                例えば、次の画像の場合、
+            </p>
+            <img src="https://mitek37.github.io/card_battle/image_sys/mana.png" alt="コスト回復前">
+            <p>
+                コスト上限を10にし残りコストを8回復するので、
+                次のターンでは<b>「9/10」</b>の状態で始まります。
+                通常のコスト回復では、コスト上限をオーバーフローして回復することはできません。
+            </p>
+        </p>
+
+        <img src="https://mitek37.github.io/card_battle/image_sys/mana_enter.png" alt="コスト回復">
+
+        <p>
+            コスト回復が終わったら、終了時に効果を発揮する状態異常(やけどや快楽等)は、その効果を発動します。
+            そして、各状態異常の残りターン数を-1します。
+        </p>
+
+        <img src="https://mitek37.github.io/card_battle/image_sys/effect_enter.png" alt="状態異常実行">
+
+        <p>
+            その後、カードによるターン終了時の特別な処理がある場合、最後にそれを実行して
+            自身のターンが終了します。
+        </p>
+
+        <p>
+            先攻のターンが終了したら、後攻のアクションフェイズに入ります。<br>
+            後攻のアクションフェイズ、バトルフェイズ、ターン終了時の処理も順に終了したら、
+            もう一度先攻のアクションフェイズからスタートし、以降、これを繰り返します。
+        </p>
+
+        <p>様々なカードと戦術を駆使して、勝利を掴みましょう！</p>
+
+        <p><br><br><br><br><br><br><br><br><br><br></p>
+
+    <img id="gotop" src="https://mitek37.github.io/card_battle/image_sys/gotop.png" alt="ページTOPへ">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

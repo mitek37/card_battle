@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>うちのこカードバトル_デッキの作り方</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <div class="menu-button">MENU</div>
+            <ul class="dropdown-menu">
+                <li><a href="https://mitek37.github.io/card_battle/index.html">HOME</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_newcard.html">新着カード</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_cardgallery.html">カードギャラリー</a></li>
+                <li><a href="#">ルール</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_card.html">・カードと編成</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_battle.html">・試合の流れ</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_effect.html">・貫通と状態異常</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_word.html">・用語解説</a></li>
+                <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_deck.html">デッキの作り方</a></li>
+                <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_cardidea.html">カード案について</a></li>
+            </ul>
+        </div>
+        <div class="title">デッキの作り方</div>
+    </header>
+    <p>
+        実際に試合をするために用意するデッキの編成方法について話します！
+    </p>
+
+    <p>
+        まず、<b>どのカードを何枚編成するかを先に決めましょう！</b><br>
+        何気にここが一番わくわくしますよね(∩^-^)∩(∩･v･)∩
+    </p>
+    
+    <p>デッキ内容を考え終わったら、各カードには必ず<b>カードID</b>というものが振られています。</p>
+    <p>カード左下に書いてある、3文字の小文字アルファベットがカードIDです。</p>
+    <img src="https://mitek37.github.io/card_battle/image_sys/cardid.png" alt="カードIDの画像">
+
+    <p>このidを使って、どのカードを何枚編成するかを、プロンプト(コピペ)に起こしておきます。</p>
+    <p>書き方は以下の通りです！</p>
+
+    <img src="https://mitek37.github.io/card_battle/image_sys/memo.png" alt="デッキメモの画像">
+
+    <p>このように「カードID,枚数」を改行区切りで羅列する形にしてください！（「,」または「、」は全角半角を問いません）</p>
+
+    <p>プログラムで読み取らせるものなので、書き方を間違えていないか<b>(特にidより前の先頭部分に余分な文字・空白がないか)</b>お気をつけください！</p>
+
+    <p>
+        あとは、できたコピペをそのまま試合前にあさりか聞き専に送っていただければ、
+        試合場に自動でそれぞれが組んだデッキが出現します。
+        (全自動雀卓みたいですね)
+
+        上手く戦えたデッキメモはどこかにコピペしておくのもいいかもしれないですね！
+    </p>
+
+    <p><br><br><br><br><br><br><br><br><br><br></p>
+
+    <img id="gotop" src="https://mitek37.github.io/card_battle/image_sys/gotop.png" alt="ページTOPへ">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

@@ -181,8 +181,58 @@ p {
 }
 
 .ch-btn.sp-96.active {
-    background: rgb(148,239,241);
+    background: rgb(48,170,35);
+    color: white;
+}
+
+.ch-btn.sp-600.active {
+    background: rgb(16,17,233);
+    color: white;
+}
+
+.ch-btn.sp-4023.active {
+    background: rgb(255,136,51);
+    color: white;
+}
+
+.ch-btn.sp-5170.active {
+    background: rgb(55,241,161);
     color: black;
+}
+
+.ch-btn.sp-8626.active {
+    background: rgb(119,235,106);
+    color: black;
+}
+
+.ch-btn.sp-10005.active {
+    background: rgb(192,102,255);
+    color: white;
+}
+
+.ch-btn.sp-rainbow.active {
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/rainbow.png");
+    color: black;
+}
+
+.ch-btn.sp-attack.active {
+    background: rgb(255,84,85);
+    color: white;
+}
+
+.ch-btn.sp-guard.active {
+    background: rgb(84,199,255);
+    color: black;
+}
+
+.ch-btn.sp-support.active {
+    background: rgb(80,243,80);
+    color: black;
+}
+
+.ch-btn.sp-tricky.active {
+    background: rgb(198,84,255);
+    color: white;
 }
 
 .ev-btn {
@@ -201,6 +251,31 @@ p {
 .ev-btn.active {
     background: #34c6f3;
     color: white;
+}
+
+.ev-btn.sp-kougeki.active {
+    background: rgb(255,105,106);
+    color: white;
+}
+
+.ev-btn.sp-shien.active {
+    background: rgb(255,238,101);
+    color: black;
+}
+
+.ev-btn.sp-soubi.active {
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/soubi.png");
+    color: black;
+}
+
+.ev-btn.sp-tokushu.active {
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/tokushu.png");
+    color: white;
+}
+
+.ev-btn.sp-rainbow.active {
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/rainbow.png");
+    color: black;
 }
 
 #gallery {

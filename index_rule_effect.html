@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ひらかないで</title>
+    <title>うちのこカードバトル_状態異常など</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,27 +12,89 @@
         <div class="menu-container">
             <div class="menu-button">MENU</div>
             <ul class="dropdown-menu">
-                <li><a href="https://mitek37.github.io/card_battle/index.html">ひらかないで</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index.html">ひらかないで</a></li>
-                <li><a href="#">ひらかないで</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index.html">ひらかないで</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index.html">ひらかないで</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index.html">ひらかないで</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index.html">ひらかないで</a></li>
-                <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index.html">ひらかないで</a></li>
-                <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index.html">ひらかないで</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index.html">HOME</a></li>
+                <li class="go-down"><a href="https://mitek37.github.io/card_battle/index_down.html">ダウンロード</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_newcard.html">新着カード</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_cardgallery.html">カードギャラリー</a></li>
+                <li><a href="#">ルール</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_card.html">・カードと盤面</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_battle.html">・試合の流れ</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_effect.html">・貫通と状態異常</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_word.html">・用語解説</a></li>
+                <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_deck.html">デッキの作り方</a></li>
+                <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_cardidea.html">カード案について</a></li>
             </ul>
         </div>
-        <div class="title">ひらかないで</div>
+        <div class="title">状態異常など</div>
     </header>
-    <h1>ひらかないで</h1>
-    <p>ひらかないでっていったのに</p>
+    <h1>状態異常とバフ</h1>
+        <p>
+            キャラクターには、状態異常と呼ばれるものがかかることがあります。
+            状態異常は指定のターン数経過するか、別の状態異常で上書きすることで解除することができるものが多いです。
+            カードの効果によっては、状態異常を解除できる性能を持つものも存在します。
+        </p>
 
-    <p><br><br><br><br><br><br><br></p>
+        <p>状態異常の一覧は以下の通りです。</p>
 
-    <img id="gotop" src="https://mitek37.github.io/card_battle/image_sys/gotoppp.png" alt="ひらかないで">
+        <img src="https://mitek37.github.io/card_battle/image_sys/effect.png" alt="状態異常一覧">
+        <img src="https://mitek37.github.io/card_battle/image_sys/effect2.png" alt="状態異常一覧2">
+
+        <p>また一部の状態異常は、上書き・解除することができません。</p>
+
+        <img src="https://mitek37.github.io/card_battle/image_sys/effect_design.png" alt="状態異常">
+
+        <p>加えて、キャラクターに攻撃力等を上げたり下げたりする<b>バフ・デバフ</b>もこのようなマークで存在します。</p>
+        <p>バフ・デバフは<b>その陣営のバトルフェイズ終了時に、その陣営のキャラにかかっている全てのバフ・デバフが解除</b>されます。</p>
+
+        <img src="https://mitek37.github.io/card_battle/image_sys/bahu.png" alt="状態異常">
+
+
+
+    <h1>カラーボーナス</h1>
+        <p>
+            キャラクターカードは、カテゴリーによって様々な色に分かれています。
+            (虹カードは虹という一つのカテゴリー判定)
+            そして、<b>同じ色のキャラクターが自陣に出ている</b>と、人数によって<b>ボーナスを受け取ることができます</b>。
+        </p>
+
+        <img src="https://mitek37.github.io/card_battle/image_sys/some1.png" alt="カラーボーナス1">
+        <img src="https://mitek37.github.io/card_battle/image_sys/some2.png" alt="カラーボーナス2">
+
+    <h1>貫通属性</h1>
+        <p>
+            一部のキャラクターは<b>「貫通攻撃」</b>と呼ばれる攻撃をするものもいます。<br>
+            貫通属性のついたダメージは、キャラクターやカードの効果、状態異常などによるダメージ軽減や無効化の影響を受けません。
+            また通常の攻撃では、キャラクターをロストさせた際に余った、余分なダメージ(超過ダメージ)はそのまま消えますが、
+            貫通属性のついたダメージは、超過ダメージをそのまま他の生きているキャラクターや相手プレイヤ自身に充てることができます。
+            (超過ダメージそのものにも、貫通属性が付いています。)
+        </p>
+        <p>
+            簡単にまとめるなら、<b>「貫通〇ダメージ」のように書かれていたら、いかなる状況でも確実に〇ダメージが入る。</b>ということです！<br>
+            貫通による超過ダメージの具体的なルールとしては、
+        </p>
+
+        <p><b>・貫通攻撃先のキャラクターがロストした場合、敵陣のそのマスから次以降の番地(マス)で最初に当たるキャラクターに超過ダメージが入る</b></p>
+
+        <p><b>・貫通攻撃先のキャラクターがロストし、敵陣に他に生きているキャラクターがいない場合、相手プレイヤーのHPに超過ダメージが入る</b></p>
+
+        <h3>例</h3>
+
+        <img src="https://mitek37.github.io/card_battle/image_sys/kan1.png" alt="貫通属性その1">
+
+        <p>上の画像の場合、3番にいるトラに超過ダメージが入ります。</p>
+
+        <img src="https://mitek37.github.io/card_battle/image_sys/kan2.png" alt="貫通属性その2">
+
+        <p>上の画像の場合、2番にいるパンドラに超過ダメージが入ります。</p>
+
+        <img src="https://mitek37.github.io/card_battle/image_sys/kan3.png" alt="貫通属性その3">
+
+        <p>上の画像の場合、相手プレイヤーのHPに超過ダメージが入ります。</p>
+
+        <p><br><br><br><br><br><br><br><br><br><br></p>
+
+    <img id="gotop" src="https://mitek37.github.io/card_battle/image_sys/gotop.png" alt="ページTOPへ">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-

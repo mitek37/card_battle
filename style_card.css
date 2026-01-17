@@ -19,7 +19,7 @@ header {
     height: 80px;
     text-align: center;
     font-family: '851Gochikakutto', sans-serif;
-    background: #0a65d0;
+    background: #d00ab6;
     color: white;
     justify-content: center;
     margin: 0;
@@ -62,7 +62,7 @@ p {
 .menu-button {
     width: 80px;
     height: 80px;
-    background: #162a9b;
+    background: #9b1685;
     color: #fff;
     display: flex;
     align-items: center;
@@ -113,14 +113,36 @@ p {
     background: #ff8adc;
 }
 
+.go-down {
+    background: rgb(41, 185, 41);
+}
+
+.go-down a:hover {
+    background: rgb(91, 235, 91);
+}
+
 .title {
     padding-top: 25px;
     padding-left: 70px;
     font-size: 35px;
 }
 
-.charasort {
+.cardsort {
     display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.charasort {
+    display: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.eventsort {
+    display: none;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
 }
@@ -141,6 +163,127 @@ p {
 .cs-btn.active {
     background: #34c6f3;
     color: white;
+}
+
+.ch-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.ch-btn:hover {
+    background: #cccccc;
+}
+
+.ch-btn.active {
+    background: #34c6f3;
+    color: white;
+}
+
+.ch-btn.sp-37.active {
+    background: rgb(148,239,241);
+    color: black;
+}
+
+.ch-btn.sp-96.active {
+    background: rgb(48,170,35);
+    color: white;
+}
+
+.ch-btn.sp-600.active {
+    background: rgb(16,17,233);
+    color: white;
+}
+
+.ch-btn.sp-4023.active {
+    background: rgb(255,136,51);
+    color: white;
+}
+
+.ch-btn.sp-5170.active {
+    background: rgb(55,241,161);
+    color: black;
+}
+
+.ch-btn.sp-8626.active {
+    background: rgb(119,235,106);
+    color: black;
+}
+
+.ch-btn.sp-10005.active {
+    background: rgb(192,102,255);
+    color: white;
+}
+
+.ch-btn.sp-rainbow.active {
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/rainbow.png");
+    color: black;
+}
+
+.ch-btn.sp-attack.active {
+    background: rgb(255,84,85);
+    color: white;
+}
+
+.ch-btn.sp-guard.active {
+    background: rgb(84,199,255);
+    color: black;
+}
+
+.ch-btn.sp-support.active {
+    background: rgb(80,243,80);
+    color: black;
+}
+
+.ch-btn.sp-tricky.active {
+    background: rgb(198,84,255);
+    color: white;
+}
+
+.ev-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.ev-btn:hover {
+    background: #cccccc;
+}
+
+.ev-btn.active {
+    background: #34c6f3;
+    color: white;
+}
+
+.ev-btn.sp-kougeki.active {
+    background: rgb(255,105,106);
+    color: white;
+}
+
+.ev-btn.sp-shien.active {
+    background: rgb(255,238,101);
+    color: black;
+}
+
+.ev-btn.sp-soubi.active {
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/soubi.png");
+    color: black;
+}
+
+.ev-btn.sp-tokushu.active {
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/tokushu.png");
+    color: white;
+}
+
+.ev-btn.sp-rainbow.active {
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/rainbow.png");
+    color: black;
 }
 
 #gallery {
@@ -200,7 +343,6 @@ p {
     max-height: 90%;
     border-radius: 10px;
 }
-
 
 
 

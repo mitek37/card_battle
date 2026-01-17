@@ -5,6 +5,10 @@ $(document).ready(function() {
     const $overlay = $('#overlay');
     const $overlayImg = $('#overlay-img');
     const $buttons = $('.cs-btn');
+    const $chbuttons = $('.ch-btn');
+    const $evbuttons = $('.ev-btn');
+    let $chcate = 'chara';
+    let $evcate = 'event';
 
     function loadImages(cate) {
         $gallery.empty();
@@ -37,12 +41,46 @@ $(document).ready(function() {
         }
     });
 
+    // カテゴリーボタン
     $buttons.on('click', function() {
         $buttons.removeClass('active');
         $(this).addClass('active');
 
-        const cate = $(this).data('folder');
-        loadImages(cate);
+        if ($(this).data('folder') === 'chara') {
+            document.querySelector('.charasort').style.display = 'flex';
+            loadImages($chcate);
+        } else {
+            document.querySelector('.charasort').style.display = 'none';
+        }
+
+        if ($(this).data('folder') === 'event') {
+            document.querySelector('.eventsort').style.display = 'flex';
+            loadImages($evcate);
+        } else {
+            document.querySelector('.eventsort').style.display = 'none';
+        }
+
+        if ($(this).data('folder') === 'all') {
+            loadImages('all');
+        }
+    });
+
+    // キャラボタン
+    $chbuttons.on('click', function() {
+        $chbuttons.removeClass('active');
+        $(this).addClass('active');
+
+        $chcate = $(this).data('folder');
+        loadImages($chcate);
+    });
+
+    // イベントボタン
+    $evbuttons.on('click', function() {
+        $evbuttons.removeClass('active');
+        $(this).addClass('active');
+
+        $evcate = $(this).data('folder');
+        loadImages($evcate);
     });
 
     loadImages('all');
@@ -65,7 +103,6 @@ $(document).ready(function() {
         $("html, body").animate({ scrollTop: 0 }, 400);
     });
 });
-
 
 
 

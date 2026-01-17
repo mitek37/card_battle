@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    background-image: url("https://mitek37.github.io/card_battle/image_sys/bg.png");
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/bg2.png");
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
@@ -28,7 +28,7 @@ header {
 
 h1 {
     font-family: '851Gochikakutto', sans-serif;
-    background-image: url("https://mitek37.github.io/card_battle/image_sys/h1tag.png");
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/h1tag2.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 80%;
@@ -343,6 +343,7 @@ p {
     max-height: 90%;
     border-radius: 10px;
 }
+
 
 
 

@@ -1,10 +1,12 @@
 {
     "images": [
         "ach.png",
+        "alm.png",
         "bis.png",
         "bya.png",
         "chd.png",
         "dol.png",
+        "dth.png",
         "fox.png",
         "fus.png",
         "gnv.png",
@@ -18,6 +20,8 @@
         "knv.png",
         "kok.png",
         "kyo.png",
+        "lka.png",
+        "lkj.png",
         "mdr.png",
         "mgs.png",
         "mod.png",
@@ -34,21 +38,23 @@
         "ria.png",
         "rok.png",
         "rrs.png",
+        "rsa.png",
         "ruk.png",
         "ryu.png",
         "sag.png",
-        "scr.png",
         "sdn.png",
         "ser.png",
         "sgr.png",
         "skb.png",
+        "skl.png",
         "srs.png",
         "ssr.png",
         "sun.png",
         "syg.png",
         "tor.png",
         "umm.png",
-        "urz.png",
-        "uss.png"
+        "urt.png",
+        "uss.png",
+        "vrt.png"
     ]
 }

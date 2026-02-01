@@ -1,6 +1,8 @@
 {
     "images": [
+        "ars.png",
         "cad.png",
+        "cmj.png",
         "egb.png",
         "ekn.png",
         "ekr.png",
@@ -13,7 +15,6 @@
         "kae.png",
         "ken.png",
         "knt.png",
-        "mgn.png",
         "nes.png",
         "nzs.png",
         "oiw.png",
@@ -22,11 +23,11 @@
         "sgk.png",
         "snd.png",
         "tuk.png",
+        "uno.png",
         "urg.png",
         "yub.png",
         "yuw.png",
         "ztb.png",
         "zuk.png"
     ]
-
 }

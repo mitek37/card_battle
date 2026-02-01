@@ -1,5 +1,6 @@
 {
     "images": [
+        "alm.png",
         "bis.png",
         "bya.png",
         "chd.png",
@@ -13,6 +14,8 @@
         "knv.png",
         "kok.png",
         "kyo.png",
+        "lka.png",
+        "lkj.png",
         "mdr.png",
         "mod.png",
         "mrt.png",
@@ -24,6 +27,7 @@
         "raf.png",
         "rei.png",
         "rok.png",
+        "rsa.png",
         "ryu.png",
         "sag.png",
         "sdn.png",
@@ -31,8 +35,7 @@
         "skb.png",
         "ssr.png",
         "tor.png",
-        "umm.png"
+        "umm.png",
+        "vrt.png"
     ]
-
 }
-

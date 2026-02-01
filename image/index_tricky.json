@@ -1,6 +1,7 @@
 {
     "images": [
         "ach.png",
+        "dth.png",
         "hch.png",
         "jon.png",
         "mgs.png",
@@ -10,10 +11,11 @@
         "rei.png",
         "rrs.png",
         "ruk.png",
-        "scr.png",
+        "skl.png",
         "ssr.png",
         "sun.png",
         "umm.png",
-        "urz.png"
+        "urt.png",
+        "vrt.png"
     ]
 }

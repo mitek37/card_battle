@@ -7,8 +7,10 @@ $(document).ready(function() {
     const $buttons = $('.cs-btn');
     const $chbuttons = $('.ch-btn');
     const $evbuttons = $('.ev-btn');
+    const $cobuttons = $('.co-btn');
     let $chcate = 'chara';
     let $evcate = 'event';
+    let $cocate = 'event';
 
     function loadImages(cate) {
         $gallery.empty();
@@ -60,6 +62,13 @@ $(document).ready(function() {
             document.querySelector('.eventsort').style.display = 'none';
         }
 
+        if ($(this).data('folder') === 'cost') {
+            document.querySelector('.costsort').style.display = 'flex';
+            loadImages($cocate);
+        } else {
+            document.querySelector('.costsort').style.display = 'none';
+        }
+
         if ($(this).data('folder') === 'all') {
             loadImages('all');
         }
@@ -81,6 +90,15 @@ $(document).ready(function() {
 
         $evcate = $(this).data('folder');
         loadImages($evcate);
+    });
+
+    // コストボタン
+    $cobuttons.on('click', function() {
+        $cobuttons.removeClass('active');
+        $(this).addClass('active');
+
+        $cocate = $(this).data('folder');
+        loadImages($cocate);
     });
 
     loadImages('all');

@@ -129,6 +129,7 @@ p {
 
 .cardsort {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
 }
@@ -141,6 +142,13 @@ p {
 }
 
 .eventsort {
+    display: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.costsort {
     display: none;
     flex-wrap: wrap;
     gap: 10px;
@@ -284,6 +292,52 @@ p {
 .ev-btn.sp-rainbow.active {
     background-image: url("https://mitek37.github.io/card_battle/image_sys/rainbow.png");
     color: black;
+}
+
+.co-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.co-btn:hover {
+    background: #cccccc;
+}
+
+.co-btn.active {
+    background: #ed34f3;
+    color: white;
+}
+
+.co-btn.cost0.active {
+    background: #72C51F;
+    color: black;
+}
+
+.co-btn.cost1to3.active {
+    background: #1FC51F;
+    color: black;
+}
+
+.co-btn.cost4to6.active {
+    background: #1FC572;
+    color: black;
+}
+
+.co-btn.cost7to9.active {
+    background: #1FC5C5;
+    color: black;
+}
+.co-btn.cost10to11.active {
+    background: #1F72C5;
+    color: white;
+}
+.co-btn.cost12.active {
+    background: #1F1FC5;
+    color: white;
 }
 
 #gallery {

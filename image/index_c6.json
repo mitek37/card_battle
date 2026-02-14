@@ -1,6 +1,8 @@
 {
     "images": [
+        "ach.png",
         "dol.png",
+        "hch.png",
         "ird.png",
         "jon.png",
         "kgr.png",
@@ -9,6 +11,8 @@
         "oiw.png",
         "pan.png",
         "sks.png",
-        "urt.png"
+        "urt.png",
+        "val.png",
+        "zet.png"
     ]
 }

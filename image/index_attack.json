@@ -4,6 +4,8 @@
         "bis.png",
         "bya.png",
         "chd.png",
+        "crp.png",
+        "dof.png",
         "dol.png",
         "fox.png",
         "gnv.png",
@@ -20,6 +22,7 @@
         "mod.png",
         "mrt.png",
         "msz.png",
+        "neo.png",
         "niv.png",
         "non.png",
         "nrs.png",
@@ -36,6 +39,7 @@
         "ssr.png",
         "tor.png",
         "umm.png",
+        "val.png",
         "vrt.png"
     ]
 }

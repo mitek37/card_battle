@@ -1,18 +1,928 @@
 {
     "card": {
         "ach.png": {
-            "name":"藤村旭陽(あ一ちゃん) ach",
-            "cost":"6",
-            "life":"10",
-            "effect":"【召喚時】このキャラは1番地にのみ召喚できる。また、召喚時に状態異常「闇(2)」を付与。【行動時】このキャラクターは行動できない。【特殊効果:】自身への攻撃ダメージを1に軽減する。バトルフェイズ開始時、自身の右隣にいるキャラ1人(自陣に「ひ一ちゃん」がいる場合は、全ての自キャラ)に状態異常「快楽(1)」を付与。",
-            "flavor":"「私がついてますからね…!」"
+            "name": "藤村旭陽(あ一ちゃん) ach",
+            "cost": "6",
+            "life": "10",
+            "effect": "【召喚時】このキャラは1番地にのみ召喚できる。また、召喚時に状態異常「闇(2)」を付与。【行動時】このキャラクターは行動できない。【特殊効果:】自身への攻撃ダメージを1に軽減する。バトルフェイズ開始時、自身の右隣にいるキャラ1(自陣に「ひ一ちゃん」がいる場合は、全ての自キャラ)に状態異常「快楽(1)」を付与。",
+            "flavor": "「私がついてますからね…!」"
         },
         "aed.png": {
-            "name":"AED aed",
-            "cost":"6",
-            "life":"10",
-            "effect":"場に出す時、自キャラ1人を指定してライフを全回復するか、または自分のHPを5回復することができる。",
-            "flavor":"「ギャグ漫画じゃなかったら死んでたっつーの!!」"
+            "name": "AED aed",
+            "cost": "8",
+            "life": "e",
+            "effect": "場に出す時、自キャラ1人を指定してライフを全回復するか、または自分のHPを5回復することができる。",
+            "flavor": "「ギャグ漫画じゃなかったら死んでたっつーの !! 」"
+        },
+        "alm.png": {
+            "name": "アルミドロ alm",
+            "cost": "8",
+            "life": "13",
+            "effect": "【行動時】敵キャラ1人に1D4+5ダメージ、加えて状態異常「やけど(1)」を付与。【特殊効果:吸血鬼】自陣のバトル開始時、両隣にいる自キャラのライフを1ずつ吸収する。",
+            "flavor": "「頑張ったねえ～！ヨシヨシあげる～」"
+        },
+        "amn.png": {
+            "name": "あめねこ料理 amn",
+            "cost": "2",
+            "life": "e",
+            "effect": "装備中、最初に受けた、被回復量または被ダメージ量を+3し、このカードを墓地に送る。",
+            "flavor": "もちもち雲丹のスパゲッティ蒸し"
+        },
+        "ars.png": {
+            "name": "アルカナ☆スレイブ ars",
+            "cost": "7",
+            "life": "e",
+            "effect": "自陣に「L社職員：かな」がいる場合、発動可能。場に出す時、全ての敵キャラに5ダメージ。",
+            "flavor": "「愛と正義の名のもとに !! 」"
+        },
+        "bis.png": {
+            "name": "霧の楽団 角行 bis",
+            "cost": "4",
+            "life": "12",
+            "effect": "【召喚時】コストを追加で1支払うか、手札からカードを1枚墓場に送ることで、自キャラ1人を指定して手札に戻し、同じ番地に自身を召喚可能。【行動時】敵キャラ1人に貫通3ダメージ。攻撃先が自身と同じ番地にいる場合、追加で貫通1ダメージ。【特殊効果:龍馬の卵】自身の隣に、名前に「ノゥム·ヴィオラ」を含むキャラが召喚されている場合、追加で貫通1ダメージ。",
+            "flavor": "「お前たち全員、斬り伏せる！」"
+        },
+        "bya.png": {
+            "name": "百夜 bya",
+            "cost": "5",
+            "life": "13",
+            "effect": "【行動時】敵キャラ1人に1D4+3ダメージ。【特殊効果:】行動ダイスで11~12が出た場合、攻撃先に状態異常「毒(1)」を与える。",
+            "flavor": "「金のためなら、何でもする。」"
+        },
+        "cad.png": {
+            "name": "蝋燭 cad",
+            "cost": "4",
+            "life": "e",
+            "effect": "場に出す時、自キャラ2人を指定して1D8を振り、出た目の分だけ、片方のライフをもう片方に吸収させる。",
+            "flavor": "「アジャラカモクレン」"
+        },
+        "chd.png": {
+            "name": "チェスロヴァス・ダッハ chd",
+            "cost": "12",
+            "life": "15",
+            "effect": "【行動時】敵キャラ1人に3D5+3ダメージ。また、一度攻撃したキャラがロストするまで攻撃先が固定される。【特殊効果:鎧】召喚後、1度だけ攻撃ダメージを10軽減してもよい。",
+            "flavor": "「腕の立つ物あれば出よ!」"
+        },
+        "cmj.png": {
+            "name": "入れ替えマジック cmj",
+            "cost": "4",
+            "life": "e",
+            "effect": "場に出す時、1D3を振り相手のコストを出た目の分減らし、自分のコストを出た目の分回復。",
+            "flavor": "「まるで魔法みたいでしょ?」"
+        },
+        "col.png": {
+            "name": "コールセンター col",
+            "cost": "3",
+            "life": "e",
+            "effect": "場に出す時、山札からカードを1D5-1枚ドローし、手札に加える。",
+            "flavor": ""
+        },
+        "crp.png": {
+            "name": "クラッぷそー crp",
+            "cost": "5",
+            "life": "12",
+            "effect": "【行動時】1D3を振り、以下の効果を発動する。また、行動ダイスで7,11が出た場合、好きな効果を選択できる。1の場合:敵キャラ1人に1D10ダメージ。2の場合:相手のHPに1D6ダメージ。3の場合:敵キャラ1人に状態異常「凍結(1)」を付与。【特殊効果:クラップス】任意の敵キャラが行動ダイスで12を出した時、自身のライフが即座に0になる。",
+            "flavor": "「先生!よろしくお願いします!!」"
+        },
+        "dhs.png": {
+            "name": "ダッハの剣 dhs",
+            "cost": "8",
+            "life": "e",
+            "effect": "装備中、攻撃先に追加で2ダメージ。【愛用BN:「チェスロヴァス·ダッハ」】装備中、攻撃先に追加で3ダメージ。",
+            "flavor": "タタールの血が染み付いている…"
+        },
+        "dof.png": {
+            "name": "一級うちのこ「ドウファン」 dof",
+            "cost": "8",
+            "life": "14",
+            "effect": "【行動時】敵キャラ1人に2D4+2ダメージ。【特殊効果:したたか】被攻撃時、自身の受けるダメージ量を1減少する。",
+            "flavor": "「ここがうちのこカードバトルか?噂通り、不思議な場所だな。」"
+        },
+        "dol.png": {
+            "name": "ドールズ dol",
+            "cost": "6",
+            "life": "10",
+            "effect": "【行動時】敵キャラ1人に3D3ダメージ。【特殊効果:】攻撃先が自身と同じ番地にいる場合、追加で2ダメージ。",
+            "flavor": "見なかった方が良かったね"
+        },
+        "dth.png": {
+            "name": "死神 dth",
+            "cost": "0",
+            "life": "0",
+            "effect": "※このカードをドローした瞬間に、自動で自陣の4番地に召喚する。既にキャラがいる場合は、即座に墓地に送る。【行動時】このキャラクターは行動できない。【特殊効果:】フィールド上のキャラが行動ダイスで4を出した時、そのキャラを墓地に送り、その番地に自身を移動させる。キャラを4体墓地に送った時、自身を墓地に送る。(自身は状態異常「闇」と上記以外の方法で墓地に送られない)",
+            "flavor": ""
+        },
+        "eco.png": {
+            "name": "再生可能なエネルギー eco",
+            "cost": "2",
+            "life": "e",
+            "effect": "場に出す時、手札中のカード3枚を墓場に送り自分のHPを3回復。",
+            "flavor": "これもきっと…何かの力に…"
+        },
+        "egb.png": {
+            "name": " egb",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "ekn.png": {
+            "name": " ekn",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "ekr.png": {
+            "name": " ekr",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "eno.png": {
+            "name": " eno",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "esm.png": {
+            "name": " esm",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "esn.png": {
+            "name": " esn",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "esr.png": {
+            "name": " esr",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "eyz.png": {
+            "name": " eyz",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "fox.png": {
+            "name": " fox",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "fus.png": {
+            "name": " fus",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "gnk.png": {
+            "name": " gnk",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "gnv.png": {
+            "name": " gnv",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "grn.png": {
+            "name": " grn",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "hch.png": {
+            "name": " hch",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "hey.png": {
+            "name": " hey",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "hye.png": {
+            "name": " hye",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "idn.png": {
+            "name": " idn",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "igi.png": {
+            "name": " igi",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "ird.png": {
+            "name": " ird",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "jac.png": {
+            "name": " jac",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "jag.png": {
+            "name": " jag",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "jbk.png": {
+            "name": " jbk",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "jgn.png": {
+            "name": " jgn",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "jon.png": {
+            "name": " jon",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "jut.png": {
+            "name": " jut",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "kae.png": {
+            "name": " kae",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "ken.png": {
+            "name": " ken",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "kgr.png": {
+            "name": " kgr",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "kmm.png": {
+            "name": " kmm",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "kne.png": {
+            "name": " kne",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "knl.png": {
+            "name": " knl",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "knt.png": {
+            "name": " knt",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "knv.png": {
+            "name": " knv",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "kok.png": {
+            "name": " kok",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "krn.png": {
+            "name": " krn",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "kyo.png": {
+            "name": " kyo",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "lka.png": {
+            "name": " lka",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "lkj.png": {
+            "name": " lkj",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "los.png": {
+            "name": " los",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "mdr.png": {
+            "name": " mdr",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "mgn.png": {
+            "name": " mgn",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "mgs.png": {
+            "name": " mgs",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "mie.png": {
+            "name": " mie",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "miv.png": {
+            "name": " miv",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "mod.png": {
+            "name": " mod",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "mrt.png": {
+            "name": " mrt",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "msz.png": {
+            "name": " msz",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "naz.png": {
+            "name": " naz",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "neo.png": {
+            "name": " neo",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "nes.png": {
+            "name": " nes",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "niv.png": {
+            "name": " niv",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "nnm.png": {
+            "name": " nnm",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "non.png": {
+            "name": " non",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "nrs.png": {
+            "name": " nrs",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "nzs.png": {
+            "name": " nzs",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "oiw.png": {
+            "name": " oiw",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "otd.png": {
+            "name": " otd",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "pan.png": {
+            "name": " pan",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "pst.png": {
+            "name": " pst",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "raf.png": {
+            "name": " raf",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "ran.png": {
+            "name": " ran",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "rei.png": {
+            "name": " rei",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "ren.png": {
+            "name": " ren",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "rgn.png": {
+            "name": " rgn",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "ria.png": {
+            "name": " ria",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "rlk.png": {
+            "name": " rlk",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "rok.png": {
+            "name": " rok",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "rrs.png": {
+            "name": " rrs",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "rsa.png": {
+            "name": " rsa",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "ruk.png": {
+            "name": " ruk",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "rur.png": {
+            "name": " rur",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "ryu.png": {
+            "name": " ryu",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "sag.png": {
+            "name": " sag",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "sdn.png": {
+            "name": " sdn",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "ser.png": {
+            "name": " ser",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "sgj.png": {
+            "name": " sgj",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "sgk.png": {
+            "name": " sgk",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "sgr.png": {
+            "name": " sgr",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "sim.png": {
+            "name": " sim",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "skb.png": {
+            "name": " skb",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "skl.png": {
+            "name": " skl",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "sks.png": {
+            "name": " sks",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "smp.png": {
+            "name": " smp",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "snd.png": {
+            "name": " snd",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "spy.png": {
+            "name": " spy",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "srs.png": {
+            "name": " srs",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "ssr.png": {
+            "name": " ssr",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "std.png": {
+            "name": " std",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "sun.png": {
+            "name": " sun",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "syg.png": {
+            "name": " syg",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "ten.png": {
+            "name": " ten",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "tim.png": {
+            "name": " tim",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "tor.png": {
+            "name": " tor",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "trd.png": {
+            "name": " trd",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "tri.png": {
+            "name": " tri",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "tuk.png": {
+            "name": " tuk",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "tut.png": {
+            "name": " tut",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "uls.png": {
+            "name": " uls",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "umm.png": {
+            "name": " umm",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "uno.png": {
+            "name": " uno",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "urg.png": {
+            "name": " urg",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "urt.png": {
+            "name": " urt",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "ush.png": {
+            "name": " ush",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "usn.png": {
+            "name": " usn",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "uss.png": {
+            "name": " uss",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "val.png": {
+            "name": " val",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "vrt.png": {
+            "name": " vrt",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "wir.png": {
+            "name": " wir",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "wts.png": {
+            "name": " wts",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "you.png": {
+            "name": " you",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "yub.png": {
+            "name": " yub",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "yuw.png": {
+            "name": " yuw",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "zet.png": {
+            "name": " zet",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "ztb.png": {
+            "name": " ztb",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
+        },
+        "zuk.png": {
+            "name": " zuk",
+            "cost": "",
+            "life": "",
+            "effect": "",
+            "flavor": ""
         }
     }
 }

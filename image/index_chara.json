@@ -7,6 +7,7 @@
         "chd.png",
         "crp.png",
         "dof.png",
+        "dog.png",
         "dol.png",
         "dth.png",
         "fox.png",
@@ -23,6 +24,7 @@
         "knv.png",
         "kok.png",
         "kyo.png",
+        "leg.png",
         "lka.png",
         "lkj.png",
         "mdr.png",
@@ -60,6 +62,9 @@
         "urt.png",
         "uss.png",
         "val.png",
-        "vrt.png"
+        "vrt.png",
+        "xsx.png",
+        "xux.png",
+        "xvx.png"
     ]
 }

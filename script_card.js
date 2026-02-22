@@ -118,6 +118,7 @@ $(document).ready(function() {
         } else {
             document.querySelector('.costsort').style.display = 'none';
             document.querySelector('.coidsort').style.display = 'none';
+            $coiden = 'all'
         }
 
         if ($(this).data('folder') === 'all') {

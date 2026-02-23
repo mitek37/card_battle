@@ -1,3 +1,8 @@
 {
-    "version": "3.2.3"
+    "valid": "true",
+    "version": "3.2.3",
+    "can_rainbow": "5",
+    "cant_deck": [
+        "ssr.png"
+    ]
 }

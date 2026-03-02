@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    background-image: url("https://mitek37.github.io/card_battle/image_sys/bg2.png");
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/bg.png");
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
@@ -19,7 +19,7 @@ header {
     height: 80px;
     text-align: center;
     font-family: '851Gochikakutto', sans-serif;
-    background: #d00ab6;
+    background: #ec7b1f;
     color: white;
     justify-content: center;
     margin: 0;
@@ -28,7 +28,7 @@ header {
 
 h1 {
     font-family: '851Gochikakutto', sans-serif;
-    background-image: url("https://mitek37.github.io/card_battle/image_sys/h1tag2.png");
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/h1tag.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 80%;
@@ -62,7 +62,7 @@ p {
 .menu-button {
     width: 80px;
     height: 80px;
-    background: #9b1685;
+    background: #b3580e;
     color: #fff;
     display: flex;
     align-items: center;
@@ -168,7 +168,7 @@ p {
 }
 
 .cs-btn.active {
-    background: #ed34f3;
+    background: #f39034;
     color: white;
 }
 
@@ -186,7 +186,7 @@ p {
 }
 
 .ch-btn.active {
-    background: #ed34f3;
+    background: #f39034;
     color: white;
 }
 
@@ -264,7 +264,7 @@ p {
 }
 
 .ev-btn.active {
-    background: #ed34f3;
+    background: #f39034;
     color: white;
 }
 
@@ -307,7 +307,7 @@ p {
 }
 
 .co-btn.active {
-    background: #ed34f3;
+    background: #f39034;
     color: white;
 }
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>うちのこカードバトル_カードと盤面</title>
+    <title>うちのこカードバトル_カードと編成</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,18 +13,17 @@
             <ul class="dropdown-menu">
                 <li><a href="https://mitek37.github.io/card_battle/index.html">HOME</a></li>
                 <li class="go-down"><a href="https://mitek37.github.io/card_battle/index_down.html">ダウンロード</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index_newcard.html">新着カード</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index_cardgallery.html">カードギャラリー</a></li>
-                <li><a href="#">ルール</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index_rule_card.html">・カードと盤面</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index_rule_battle.html">・試合の流れ</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index_rule_effect.html">・貫通と状態異常</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index_rule_word.html">・用語解説</a></li>
+                <li class="cg"><a href="https://mitek37.github.io/card_battle/index_newcard.html">新着カード</a></li>
+                <li class="cg"><a href="https://mitek37.github.io/card_battle/index_cardgallery.html">カードギャラリー</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_card.html">カードと編成</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_battle.html">試合の流れ</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_effect.html">貫通と状態異常</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_word.html">用語解説</a></li>
                 <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_deck.html">デッキの作り方</a></li>
                 <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_cardidea.html">カード案について</a></li>
             </ul>
         </div>
-        <div class="title">カードと盤面</div>
+        <div class="title">カードと編成</div>
     </header>
     <h1>カードとデッキ</h1>
     <p>
@@ -58,7 +57,7 @@
     </p>
     <p>
         山札の上限枚数はバランス調整によって変動します。現在は<b>30枚</b>までになっています。下限はありません。<br>
-        同じカードは<b>3枚まで</b>デッキに編成することができます。ただし、<b>縁が虹色のカードは1枚しか編成することができません</b>。
+        同じカードは<b>3枚まで</b>デッキに編成することができます。ただし、<b>縁が虹色のカードはデッキに5枚しか編成できず、さらに同じ虹色のカードを2枚以上編成することはできません。</b>。
     </p>
     <p>
         山札が0枚になると、そこから先はドローする度に「ロリケット」を1枚手に入れることになります。
@@ -101,7 +100,7 @@
     <h2>・虹カード</h2>
     <img src="https://mitek37.github.io/card_battle/image/gnv.png" alt="虹カード" style="width: 200px;">
 
-    <p>縁が虹色のカードは、同じカードを2枚以上デッキに編成することができません。</p>
+    <p>縁が虹色のカードは、デッキに合計5枚しか編成できず、同じカードを2枚以上デッキに編成することができません。</p>
 
     <h2>・装備カード</h2>
     <img src="https://mitek37.github.io/card_battle/image/sgj.png" alt="装備カード" style="width: 200px;">
@@ -132,6 +131,8 @@
     <p><b>・自陣に既に同じキャラクターが召喚されている場合は、同じキャラクターを2体目として召喚することができない。</b><br>
         (進化前と進化後のキャラも同一キャラクターとみなされる)
     </p>
+
+    <p><b>・番地指定、召喚条件が満たされていない場合は召喚することができない。</b></p>
 
     <p>
         なら、既に召喚されたキャラクターをドローした時はどうすればよいのか。<br>

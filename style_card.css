@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    background-image: url("https://mitek37.github.io/card_battle/image_sys/bg2.png");
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/bg.png");
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
@@ -19,7 +19,7 @@ header {
     height: 80px;
     text-align: center;
     font-family: '851Gochikakutto', sans-serif;
-    background: #d00ab6;
+    background: #ec7b1f;
     color: white;
     justify-content: center;
     margin: 0;
@@ -28,7 +28,7 @@ header {
 
 h1 {
     font-family: '851Gochikakutto', sans-serif;
-    background-image: url("https://mitek37.github.io/card_battle/image_sys/h1tag2.png");
+    background-image: url("https://mitek37.github.io/card_battle/image_sys/h1tag.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 80%;
@@ -62,7 +62,7 @@ p {
 .menu-button {
     width: 80px;
     height: 80px;
-    background: #9b1685;
+    background: #b3580e;
     color: #fff;
     display: flex;
     align-items: center;
@@ -119,6 +119,14 @@ p {
 
 .go-down a:hover {
     background: rgb(91, 235, 91);
+}
+
+.cg {
+    background: #1db9be;
+}
+
+.cg a:hover {
+    background: #4de9e9;
 }
 
 .title {
@@ -181,7 +189,7 @@ p {
 }
 
 .cs-btn.active {
-    background: #ed34f3;
+    background: #f39034;
     color: white;
 }
 
@@ -199,7 +207,7 @@ p {
 }
 
 .ch-btn.active {
-    background: #ed34f3;
+    background: #f39034;
     color: white;
 }
 
@@ -277,7 +285,7 @@ p {
 }
 
 .ev-btn.active {
-    background: #ed34f3;
+    background: #f39034;
     color: white;
 }
 
@@ -320,7 +328,7 @@ p {
 }
 
 .co-btn.active {
-    background: #ed34f3;
+    background: #f39034;
     color: white;
 }
 
@@ -366,8 +374,76 @@ p {
 }
 
 .ci-btn.active {
-    background: #ed34f3;
+    background: #f39034;
     color: white;
+}
+
+.searchtext {
+    margin: 10px 0;
+    display: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.searchsort {
+    margin: 10px 0;
+    display: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#searchBox {
+    width: 320px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #aaa;
+    border-radius: 6px;
+}
+
+#searchBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #f39034;
+    color: white;
+}
+
+#searchBtn:hover {
+    background-color: #b3580e;
+}
+
+#sortselect {
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    justify-content: center;
+}
+#sslabel {
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #ffe9c0;
+    padding: 2px 12px;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.sort-label {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 #gallery {

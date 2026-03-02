@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>うちのこカードバトル</title>
+    <title>うちのこカードバトル_カードギャラリー</title>
     <link rel="stylesheet" href="style_card.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
@@ -14,13 +14,12 @@
             <ul class="dropdown-menu">
                 <li><a href="https://mitek37.github.io/card_battle/index.html">HOME</a></li>
                 <li class="go-down"><a href="https://mitek37.github.io/card_battle/index_down.html">ダウンロード</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index_newcard.html">新着カード</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index_cardgallery.html">カードギャラリー</a></li>
-                <li><a href="#">ルール</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index_rule_card.html">・カードと盤面</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index_rule_battle.html">・試合の流れ</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index_rule_effect.html">・貫通と状態異常</a></li>
-                <li><a href="https://mitek37.github.io/card_battle/index_rule_word.html">・用語解説</a></li>
+                <li class="cg"><a href="https://mitek37.github.io/card_battle/index_newcard.html">新着カード</a></li>
+                <li class="cg"><a href="https://mitek37.github.io/card_battle/index_cardgallery.html">カードギャラリー</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_card.html">カードと編成</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_battle.html">試合の流れ</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_effect.html">貫通と状態異常</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_word.html">用語解説</a></li>
                 <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_deck.html">デッキの作り方</a></li>
                 <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_cardidea.html">カード案について</a></li>
             </ul>
@@ -33,6 +32,7 @@
         <button class="cs-btn" data-folder="chara">キャラクター</button>
         <button class="cs-btn" data-folder="event">イベント</button>
         <button class="cs-btn" data-folder="cost">コスト別</button>
+        <button class="cs-btn" data-folder="search">詳細検索</button>
     </nav>
     <nav class="charasort">
         <button class="ch-btn active" data-folder="chara">すべて</button>
@@ -44,9 +44,9 @@
         <button class="ch-btn sp-8626" data-folder="8626">8626</button>
         <button class="ch-btn sp-10005" data-folder="10005">10005</button>
         <button class="ch-btn sp-rainbow" data-folder="c_rainbow">虹</button>
-        <button class="ch-btn sp-attack" data-folder="attack">アタック</button>
+        <button class="ch-btn sp-attack" data-folder="attack">アタッカー</button>
         <button class="ch-btn sp-guard" data-folder="guard">ガード</button>
-        <button class="ch-btn sp-support" data-folder="support">サポート</button>
+        <button class="ch-btn sp-support" data-folder="support">サポーター</button>
         <button class="ch-btn sp-tricky" data-folder="tricky">トリッキー</button>
     </nav>
     <nav class="eventsort">
@@ -58,19 +58,19 @@
         <button class="ev-btn sp-rainbow" data-folder="e_rainbow">虹</button>
     </nav>
     <nav class="costsort">
-        <button class="co-btn cost0 active" data-folder="c0">0</button>
-        <button class="co-btn cost1to3" data-folder="c1">1</button>
-        <button class="co-btn cost1to3" data-folder="c2">2</button>
-        <button class="co-btn cost1to3" data-folder="c3">3</button>
-        <button class="co-btn cost4to6" data-folder="c4">4</button>
-        <button class="co-btn cost4to6" data-folder="c5">5</button>
-        <button class="co-btn cost4to6" data-folder="c6">6</button>
-        <button class="co-btn cost7to9" data-folder="c7">7</button>
-        <button class="co-btn cost7to9" data-folder="c8">8</button>
-        <button class="co-btn cost7to9" data-folder="c9">9</button>
-        <button class="co-btn cost10to11" data-folder="c10">10</button>
-        <button class="co-btn cost10to11" data-folder="c11">11</button>
-        <button class="co-btn cost12" data-folder="c12">12～</button>
+        <button class="co-btn cost0 active" data-folder="0">0</button>
+        <button class="co-btn cost1to3" data-folder="1">1</button>
+        <button class="co-btn cost1to3" data-folder="2">2</button>
+        <button class="co-btn cost1to3" data-folder="3">3</button>
+        <button class="co-btn cost4to6" data-folder="4">4</button>
+        <button class="co-btn cost4to6" data-folder="5">5</button>
+        <button class="co-btn cost4to6" data-folder="6">6</button>
+        <button class="co-btn cost7to9" data-folder="7">7</button>
+        <button class="co-btn cost7to9" data-folder="8">8</button>
+        <button class="co-btn cost7to9" data-folder="9">9</button>
+        <button class="co-btn cost10to11" data-folder="10">10</button>
+        <button class="co-btn cost10to11" data-folder="11">11</button>
+        <button class="co-btn cost12" data-folder="12">12～</button>
     </nav>
 
     <nav class="coidsort">
@@ -78,7 +78,32 @@
         <button class="ci-btn" data-folder="chara">キャラクター</button>
         <button class="ci-btn" data-folder="event">イベント</button>
     </nav>
-    
+
+    <div class="searchtext">
+        <p>カード名、ID、効果内容、フレーバーテキストを範囲に文字列検索ができます。<br>
+            ※複数のキーワードを指定する場合は「、」で区切ってください。
+        </p>
+    </div>
+
+    <div class="searchsort">
+        <input type="text" id="searchBox" placeholder="例：貫通、敵キャラ1人" style="width:300px;">
+        <button id="searchBtn">検索</button>
+    </div>
+
+    <div id="sslabel">
+        <label for="sortselect" class="sort-label">並び替え：</label>
+        <select id="sortselect">
+            <option value="alpha">ID順（デフォルト）</option>
+            <option value="name">カード名順</option>
+            <option value="add_version">実装バージョン順</option>
+            <option value="cost_asc">コストが低い順</option>
+            <option value="cost_desc">コストが高い順</option>
+            <option value="life_asc">ライフが低い順</option>
+            <option value="life_desc">ライフが高い順</option>
+            <option value="dps">瞬間火力が高い順</option>
+            <option value="dfs">固定ダメージが高い順</option>
+        </select>
+    </div>
 
     <div id="modal" class="modal">
         <img id="modal-img" src="">

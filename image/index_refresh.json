@@ -1,17 +1,26 @@
 {
     "images": [
-        "crp.png",
-        "hye.png",
-        "kne.png",
-        "mdr.png",
-        "mgn.png",
-        "nes.png",
-        "ovd.png",
+        "ach.png",
+        "bis.png",
+        "dhs.png",
+        "dog.png",
+        "eco.png",
+        "hch.png",
+        "ird.png",
+        "leg.png",
+        "mon.png",
+        "nef.png",
+        "pst.png",
+        "rgn.png",
+        "sag.png",
         "ser.png",
-        "skb.png",
+        "spy.png",
+        "tut.png",
+        "urt.png",
         "usn.png",
         "xsx.png",
         "xux.png",
-        "xvx.png"
+        "xvx.png",
+        "zuk.png"
     ]
 }

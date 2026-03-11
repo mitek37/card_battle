@@ -1,11 +1,22 @@
 {
     "images": [
-        "eob.png",
-        "fud.png",
-        "kot.png",
-        "mon.png",
-        "nef.png",
-        "rse.png",
-        "tbm.png"
+        "aky.png",
+        "asm.png",
+        "atc.png",
+        "bel.png",
+        "elx.png",
+        "fxa.png",
+        "hil.png",
+        "lac.png",
+        "mia.png",
+        "nsk.png",
+        "pry.png",
+        "rst.png",
+        "sio.png",
+        "snf.png",
+        "snm.png",
+        "spk.png",
+        "syl.png",
+        "ysn.png"
     ]
 }

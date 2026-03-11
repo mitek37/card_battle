@@ -211,6 +211,11 @@ p {
     color: white;
 }
 
+.ch-btn.sp-22.active {
+    background: rgb(205,148,102);
+    color: white;
+}
+
 .ch-btn.sp-37.active {
     background: rgb(148,239,241);
     color: black;

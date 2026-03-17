@@ -52,6 +52,28 @@ img {
     max-width: 600px;
 }
 
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #f39034;
+    color: white;
+}
+
+button:hover {
+    background-color: #b3580e;
+}
+
+.msg {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+}
+
 #gotop {
     position: fixed;
     bottom: 20px;

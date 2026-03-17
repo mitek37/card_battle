@@ -14,7 +14,8 @@ $(document).ready(function() {
     let $evcate = 'event';
     let $cocate = '0';
     let $coiden = 'all';
-    let $seleValue = 'alpha'
+    let $seleValue = 'alpha';
+    let currentCard = null;
 
     function loadImages(cate) {
         $gallery.empty();
@@ -96,7 +97,13 @@ $(document).ready(function() {
             .attr('alt', file)
             .css('cursor', 'pointer')
             .on('click', function() {
+
+                currentCard = file;   // ←追加
+
                 $overlayImg.attr('src', $(this).attr('src'));
+                $("#cardDetailPanel").hide();
+                $("#cardDetailBtn").show();
+
                 $overlay.stop(true,true).fadeIn(300);
             });
 
@@ -296,7 +303,12 @@ $(document).ready(function() {
 
     $overlay.on('click', function(e) {
         if (e.target === this) {
+
+            $("#cardDetailPanel").hide();
+            $("#cardDetailBtn").show();
+
             $overlay.stop(true,true).fadeOut(300);
+            $("#cardDetailBtn").removeClass("disabled");
         }
     });
 
@@ -427,6 +439,42 @@ $(document).ready(function() {
             const words = text.split("、").map(s => s.trim()).filter(s => s !== "");
             searchCards(words, "detail");
         }
+    });
+
+    $("#cardDetailBtn").on("click", function(){
+
+    if(!currentCard) return;
+
+    $.getJSON($JSON_URL + 'card_search.json')
+        .done(function(data){
+
+            const card = data.card[currentCard];
+
+            let version = card.add_version[0] + "." + card.add_version[1] + "." + card.add_version[2];
+
+            let html = `
+            <h2 style="color: orange;">${card.name}</h2>
+            <p>実装バージョン：${version}</p>
+            <p>最高ダメージ：${card.dps}</p>
+            <p>最低保証ダメージ：${card.dfs}<br></p>
+            <p>効果考案：${card.effecter}</p>
+            <p>画像・イラスト：${card.illustrator}</p>
+            `;
+
+            $("#cardDetailContent").html(html);
+
+            $("#cardDetailBtn").addClass("disabled");
+            $("#cardDetailPanel").fadeIn(200);
+
+        });
+
+    });
+
+    $("#cardDetailBack").on("click", function(){
+
+        $("#cardDetailPanel").fadeOut(200);
+        $("#cardDetailBtn").removeClass("disabled");
+
     });
 
     loadImages('all');

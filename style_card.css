@@ -480,6 +480,65 @@ p {
     display: flex;      
 }
 
+#overlayBox{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#cardDetailBtn{
+    align-self:flex-start;
+    margin-top:10px;
+    display:none;
+
+    background:#f39034;
+    color:white;
+    padding:8px 16px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+
+    opacity:0.9;
+}
+
+#cardDetailBtn:hover{
+    background:#b3580e;
+    opacity:1;
+}
+
+#cardDetailBtn.disabled{
+    pointer-events:none;
+    opacity:0.5;
+}
+
+#cardDetailPanel{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    background:black;
+    color: white;
+    padding:25px;
+    border-radius:10px;
+
+    width:fit-content;
+    max-width:500px;
+    max-width:80vw;
+
+    display:none;
+}
+
+#cardDetailBack{
+    margin-top:15px;
+    padding:8px 16px;
+    background:#f39034;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
 /* 拡大画像 */
 #overlay-img {
     max-width: 90%;
@@ -509,5 +568,25 @@ p {
     border-radius: 10px;
 }
 
+@media (max-width: 600px) {
+
+    #cardDetailPanel{
+        width:90vw;
+        min-width:0;
+        max-width:90vw;
+        padding:20px;
+    }
+
+    #cardDetailContent{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+    #overlay-img{
+        max-width:95vw;
+        max-height:60vh;
+    }
+
+}
 
 

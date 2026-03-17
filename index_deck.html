@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>うちのこカードバトル_デッキの作り方</title>
+    <title>うちのこカードバトル_デッキについて</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,8 +19,9 @@
                 <li><a href="https://mitek37.github.io/card_battle/index_rule_battle.html">試合の流れ</a></li>
                 <li><a href="https://mitek37.github.io/card_battle/index_rule_effect.html">貫通と状態異常</a></li>
                 <li><a href="https://mitek37.github.io/card_battle/index_rule_word.html">用語解説</a></li>
-                <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_deck.html">デッキの作り方</a></li>
+                <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_deck.html">デッキについて</a></li>
                 <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_cardidea.html">カード案について</a></li>
+                <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_question.html">Q & A</a></li>
             </ul>
         </div>
         <div class="title">デッキ作成</div>
@@ -29,9 +30,16 @@
         実際に試合をするために用意するデッキの編成方法について話します！
     </p>
 
+    <h1>ジェネレート</h1>
+
     <p>
         まず、<b>どのカードを何枚編成するかを先に決めましょう！</b><br>
         何気にここが一番わくわくしますよね(∩^-^)∩(∩･v･)∩
+    </p>
+
+    <p>試合はしてみたいんだけんど、オラ、デッキについてわかんねぇべよ。という方も大丈夫！下の方に
+        いますぐ使える<b>汎用的なデッキレシピ</b>をいくつか載せていますので
+        よければご活用ください！
     </p>
     
     <p>デッキ内容を考え終わったら、各カードには必ず<b>カードID</b>というものが振られています。</p>
@@ -53,6 +61,151 @@
 
         上手く戦えたデッキメモはどこかにコピペしておくのもいいかもしれないですね！
     </p>
+
+    <h1>デッキレシピ</h1>
+
+    <p>自分でデッキを組むのが難しい！という方のために、いくつかの非公式デッキをご紹介。<br>
+        ボタンをクリックするだけでデッキテキストがコピーできるので、ジェネレータに入力すればすぐ使えます！
+        気になるデッキテーマをクリックしてみよう！
+    </p>
+
+    <h2><a href="https://mitek37.github.io/card_battle/deckpage/index_st.html">【スタンダード】</a></h2>
+
+    <p><b>とりあえず簡単にバトルがしたいあなたに！</b></p>
+
+    <p><b>↑詳細は上をクリック↑</b></p>
+
+    <p>
+        <button onclick="copyText('st', this)">このデッキをコピー！</button>
+        <span class="msg"></span>
+    </p>
+
+    <img src="https://mitek37.github.io/card_battle/image_sys/deck_st.png" alt="スタンダード">
+
+    <h2><a href="https://mitek37.github.io/card_battle/deckpage/index_un.html">【運ゲー祭り】</a></h2>
+
+    <p><b>不確定要素満載の面白い戦い方がしたい！</b></p>
+
+    <p><b>↑詳細は上をクリック↑</b></p>
+
+    <p>
+        <button onclick="copyText('un', this)">このデッキをコピー！</button>
+        <span class="msg"></span>
+    </p>
+
+    <img src="https://mitek37.github.io/card_battle/image_sys/deck_un.png" alt="運ゲー祭り">
+
+    <h2><a href="https://mitek37.github.io/card_battle/deckpage/index_ms.html">【霧の楽団】</a></h2>
+
+    <p><b>カードゲームといえばのテーマシナジーを体感しよう！</b></p>
+
+    <p><b>↑詳細は上をクリック↑</b></p>
+
+    <p>
+        <button onclick="copyText('ms', this)">このデッキをコピー！</button>
+        <span class="msg"></span>
+    </p>
+
+    <img src="https://mitek37.github.io/card_battle/image_sys/deck_ms.png" alt="霧の楽団">
+
+    <h2><a href="https://mitek37.github.io/card_battle/deckpage/index_sg.html">【東雲デッキ】</a></h2>
+
+    <p><b>トリッキーな戦術と火力をあなたに</b></p>
+
+    <p><b>↑詳細は上をクリック↑</b></p>
+
+    <p>
+        <button onclick="copyText('sg', this)">このデッキをコピー！</button>
+        <span class="msg"></span>
+    </p>
+
+    <img src="https://mitek37.github.io/card_battle/image_sys/deck_sg.png" alt="東雲デッキ">
+
+    <script>
+        const decks = {
+            st: `fus,3
+knl,3
+umm,3
+non,2
+mdr,2
+bya,2
+ser,2
+chd,1
+ten,1
+krn,1
+tut,2
+sgk,2
+std,3
+eyz,3`,
+            un: `vrt,3
+mod,3
+ria,2
+mia,2
+spk,1
+xvx,1
+asm,1
+std,3
+ran,3
+hey,2
+rur,2
+jag,2
+kgr,2
+col,1
+jac,1
+ten,1`,
+            ms: `non,2
+knv,3
+gnv,1
+srs,2
+bis,2
+rok,3
+nrs,1
+mie,1
+miv,1
+ovd,1
+std,3
+eyz,3
+yub,2
+jut,2
+los,1
+krn,1
+ten,1`,
+            sg: `sag,3
+fus,3
+non,2
+ser,2
+rei,3
+nnm,1
+fox,2
+fud,1
+std,3
+eyz,3
+sgj,2
+los,1
+uno,1
+spy,1
+krn,1
+ten,1`
+        };
+
+        function copyText(id, btn){
+            navigator.clipboard.writeText(decks[id]).then(() => {
+
+                // ボタンの次の要素（msg）を取得
+                const msg = btn.nextElementSibling;
+
+                msg.textContent = "コピーしました！";
+
+                // 2秒後に消す
+                setTimeout(() => {
+                msg.textContent = "";
+                }, 3000);
+
+            });
+        }
+    </script>
+
+    
 
     <p><br><br><br><br><br><br><br><br><br><br></p>
 

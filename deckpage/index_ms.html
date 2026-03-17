@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>うちのこカードバトル_デッキレシピ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <div class="menu-button">MENU</div>
+            <ul class="dropdown-menu">
+                <li><a href="https://mitek37.github.io/card_battle/index.html">HOME</a></li>
+                <li class="go-down"><a href="https://mitek37.github.io/card_battle/index_down.html">ダウンロード</a></li>
+                <li class="cg"><a href="https://mitek37.github.io/card_battle/index_newcard.html">新着カード</a></li>
+                <li class="cg"><a href="https://mitek37.github.io/card_battle/index_cardgallery.html">カードギャラリー</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_card.html">カードと編成</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_battle.html">試合の流れ</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_effect.html">貫通と状態異常</a></li>
+                <li><a href="https://mitek37.github.io/card_battle/index_rule_word.html">用語解説</a></li>
+                <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_deck.html">デッキについて</a></li>
+                <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_cardidea.html">カード案について</a></li>
+                <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_question.html">Q & A</a></li>
+            </ul>
+        </div>
+        <div class="title">デッキレシピ</div>
+    </header>
+
+    <h1>霧の楽団</h1>
+
+    <h2><iro style="color: rgb(0, 110, 255);"><b>カードゲームといえばのテーマシナジーを体感しよう！</b></iro></h2>
+
+    <p>
+        エースの「ノゥム・ヴィオラ」を筆頭に、攻守バランスよく揃ったデッキ。
+        シナジーを意識しながら盤面にキャラを召喚し、エースを守りながら戦おう！
+        全体攻撃や流刑、接続エラーなどのカードには要注意！<br>
+        カードゲームに慣れてきたあなたにオススメ！
+    </p>
+
+    <p>
+        <button onclick="copyText(this)">このデッキをコピー！</button>
+        <span class="msg"></span>
+    </p>
+
+    <img id="deck-img" src="https://mitek37.github.io/card_battle/image_sys/deck_ms.png" alt="霧の楽団">
+
+    <h2><iro style="color: rgb(87, 87, 87);">デッキ枚数： 30枚</iro></h2>
+
+    <h2>【このデッキで使われているカード】</h2>
+
+    <div id="modal" class="modal">
+        <img id="modal-img" src="">
+    </div>
+    <div id="gallery"></div>
+    <div id="overlay">
+    
+        <div id="overlayBox">
+            <img id="overlay-img" src="">
+            <div id="cardDetailBtn">カード詳細</div>
+        </div>
+
+        <div id="cardDetailPanel">
+            <div id="cardDetailContent"></div>
+            <button id="cardDetailBack">戻る</button>
+        </div>
+
+    </div>
+
+    <script>
+        const decks = `knv,3
+rok,3
+bis,2
+srs,2
+non,2
+nrs,1
+gnv,1
+std,3
+eyz,3
+yub,2
+jut,2
+los,1
+miv,1
+ovd,1
+mie,1
+krn,1
+ten,1`;
+
+        function copyText(btn){
+            navigator.clipboard.writeText(decks).then(() => {
+
+                // ボタンの次の要素（msg）を取得
+                const msg = btn.nextElementSibling;
+
+                msg.textContent = "コピーしました！";
+
+                // 3秒後に消す
+                setTimeout(() => {
+                msg.textContent = "";
+                }, 3000);
+
+            });
+        }
+    </script>
+
+    <p><br><br><br><br></p>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

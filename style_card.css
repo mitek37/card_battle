@@ -233,6 +233,11 @@ p {
     color: white;
 }
 
+.ch-btn.sp-799.active {
+    background: rgb(255,86,178);
+    color: white;
+}
+
 .ch-btn.sp-4023.active {
     background: rgb(255,136,51);
     color: white;

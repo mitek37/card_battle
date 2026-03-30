@@ -1,8 +1,33 @@
 {
     "images": [
+        "adt.png",
         "aky.png",
-        "asm.png",
-        "sio.png",
-        "snm.png"
+        "crp.png",
+        "dog.png",
+        "dri.png",
+        "drm.png",
+        "evr.png",
+        "gbg.png",
+        "gno.png",
+        "hye.png",
+        "igi.png",
+        "ird.png",
+        "jon.png",
+        "leg.png",
+        "mgw.png",
+        "ndp.png",
+        "nrn.png",
+        "ofs.png",
+        "rig.png",
+        "rri.png",
+        "sdn.png",
+        "sun.png",
+        "svn.png",
+        "tft.png",
+        "trd.png",
+        "trw.png",
+        "umm.png",
+        "xsx.png",
+        "yur.png"
     ]
 }

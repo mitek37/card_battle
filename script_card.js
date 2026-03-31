@@ -184,19 +184,19 @@ $(document).ready(function() {
         }
 
         if (sortType === "add_version") {
-            return results.sort((a, b) =>
+            return [...results].sort((a, b) =>
                 Number(cards[a].add_version) - Number(cards[b].add_version)
             );
         }
 
         if (sortType === "dps") {
-            return results.sort((a, b) =>
+            return [...results].sort((a, b) =>
                 Number(cards[b].dps) - Number(cards[a].dps)
             );
         }
 
         if (sortType === "dfs") {
-            return results.sort((a, b) =>
+            return [...results].sort((a, b) =>
                 Number(cards[b].dfs) - Number(cards[a].dfs)
             );
         }

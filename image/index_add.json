@@ -1,20 +1,12 @@
 {
     "images": [
-        "adt.png",
-        "dri.png",
-        "drm.png",
-        "evr.png",
-        "gbg.png",
-        "gno.png",
-        "mgw.png",
-        "ndp.png",
-        "nrn.png",
-        "ofs.png",
-        "rig.png",
-        "rri.png",
-        "svn.png",
-        "tft.png",
-        "trw.png",
-        "yur.png"
+        "dps.png",
+        "fom.png",
+        "lie.png",
+        "lmc.png",
+        "rev.png",
+        "trl.png",
+        "trp.png",
+        "tts.png"
     ]
 }

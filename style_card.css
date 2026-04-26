@@ -131,6 +131,14 @@ p {
     background: #4de9e9;
 }
 
+.match {
+    background: #e04646;
+}
+
+.match a:hover {
+    background: #ff7d7d;
+}
+
 .title {
     padding-top: 25px;
     padding-left: 70px;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>うちのこカードバトル_デッキレシピ</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_season.css">
 </head>
 <body>
     <header>
@@ -25,35 +25,20 @@
                 <li class="go-battle"><a href="https://mitek37.github.io/card_battle/index_question.html">Q & A</a></li>
             </ul>
         </div>
-        <div class="title">デッキレシピ</div>
+        <div class="title">シーズンマッチ</div>
     </header>
 
-    <h1>スタンダード</h1>
-
-    <h2><iro style="color: rgb(0, 110, 255);"><b>とりあえず簡単にバトルがしたいあなたに！</b></iro></h2>
-
-    <p>
-        初めて使う場合でも比較的わかりやすい効果を取りそろえたデッキ。
-        低コストのキャラクターを中心にバトルを進めていきます。
-        「我が愛馬」を使って「虹ダッハ」を出せれば一発逆転も...！？<br>
-        このカード達で、まずはゲームになれるところから始めてみよう！
-    </p>
-
-    <p>
-        <button onclick="copyText(this)">このデッキをコピー！</button>
-        <span class="msg"></span>
-    </p>
-
-    <img id="deck-img" src="https://mitek37.github.io/card_battle/image_sys/deck_st.png" alt="スタンダード">
-
-    <h3><iro style="color: rgb(87, 87, 87);">デッキ枚数： 30枚</iro></h3>
-
-    <h2>【このデッキで使われているカード】</h2>
+    <h2><iro style="color: rgb(0, 110, 255);"><b>今週のシーズンマッチはこちら！</b></iro></h2>
 
     <div id="modal" class="modal">
         <img id="modal-img" src="">
     </div>
-    <div id="gallery"></div>
+
+    <h1>編成必須のカード</h1>
+    <div id="gallery-must" class="gallery"></div>
+
+    <h1>編成可能なカード</h1>
+    <div id="gallery-opti" class="gallery"></div>
     <div id="overlay">
     
         <div id="overlayBox">
@@ -68,45 +53,59 @@
 
     </div>
 
+    <h2><iro style="color: rgb(255, 50, 50);"><b>シーズンマッチとは？</b></iro></h2>
+
+    <p>
+        決まった編成ルールで戦うマッチ！
+        指定されたカードの中でどう戦うか考えよう！
+    </p>
+
+    <h3>・編成必須のカード</h3>
+
+    <p>デッキに各カード<b>必ず1枚以上</b>編成しないといけないカード！</p>
+
+    <h3>・編成可能なカード</h3>
+
+    <p>デッキに編成することができるカード。必須と可能にあるカード以外は<b>編成することができません！</b></p>
+
+    <p></p>
+
     <script>
-        const decks = `knl,3
-fus,3
-umm,3
-non,2
-bya,2
-ser,2
-mdr,2
-chd,1
-std,3
-eyz,3
-tut,2
-sgk,2
-krn,1
-ten,1`;
-
-        function copyText(btn){
-            navigator.clipboard.writeText(decks).then(() => {
-
-                // ボタンの次の要素（msg）を取得
-                const msg = btn.nextElementSibling;
-
-                msg.textContent = "コピーしました！";
-
-                // 3秒後に消す
-                setTimeout(() => {
-                msg.textContent = "";
-                }, 3000);
-
-            });
-        }
+        const mdecks = `grn,1
+eob,1
+sag,1
+spk,1
+bis,1`;
+        const odecks = `hye,1
+vrt,1
+nef,1
+msz,1
+sdn,1
+srs,1
+adt,1
+rei,1
+sgr,1
+fud,1
+pan,1
+dps,1
+wir,1
+aed,1
+col,1
+skb,1
+sio,1
+ofs,1
+mgs,1
+raf,1
+ach,1
+hch,1
+tri,1
+rst,1
+lkj,1`;
+        
     </script>
 
     <p><br><br><br><br></p>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script_season.js"></script>
 </body>
 </html>
-
-
-
-

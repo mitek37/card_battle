@@ -1,17 +1,12 @@
 {
     "images": [
-        "dof.png",
-        "dps.png",
-        "dth.png",
-        "fom.png",
-        "lie.png",
-        "lmc.png",
-        "mod.png",
-        "rev.png",
-        "skl.png",
-        "trl.png",
-        "trp.png",
-        "tts.png",
-        "vrt.png"
+        "crp.png",
+        "elx.png",
+        "gnv.png",
+        "knv.png",
+        "nna.png",
+        "rok.png",
+        "spk.png",
+        "syl.png"
     ]
 }

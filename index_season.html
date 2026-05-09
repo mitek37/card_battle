@@ -28,13 +28,36 @@
         <div class="title">シーズンマッチ</div>
     </header>
 
-    <h2><iro style="color: rgb(0, 110, 255);"><b>今週のシーズンマッチはこちら！</b></iro></h2>
+    <h2><span style="color: rgb(0, 110, 255);"><b>今週のシーズンマッチはこちら！</b></span></h2>
+    <p>（ 5/9 ～ 5/15 ）</p>
 
     <div id="modal" class="modal">
         <img id="modal-img" src="">
     </div>
 
     <h1>編成必須のカード</h1>
+    <nav class="cardsort">
+        <button class="cs-btn active" data-folder="all">すべて</button>
+        <button class="cs-btn" data-folder="chara">キャラクター</button>
+        <button class="cs-btn" data-folder="event">イベント</button>
+    </nav>
+
+    <div id="sslabel">
+        <label for="sortselect" class="sort-label">並び替え：</label>
+        <select id="sortselect">
+            <option value="alpha">ID順（デフォルト）</option>
+            <option value="name">カード名順</option>
+            <option value="add_version">実装バージョン順</option>
+            <option value="cost_asc">コストが低い順</option>
+            <option value="cost_desc">コストが高い順</option>
+            <option value="life_asc">ライフが低い順</option>
+            <option value="life_desc">ライフが高い順</option>
+            <option value="dps">瞬間火力が高い順</option>
+            <option value="dfs">固定ダメージが高い順</option>
+        </select>
+    </div>
+
+
     <div id="gallery-must" class="gallery"></div>
 
     <h1>編成可能なカード</h1>
@@ -53,7 +76,7 @@
 
     </div>
 
-    <h2><iro style="color: rgb(255, 50, 50);"><b>シーズンマッチとは？</b></iro></h2>
+    <h2><span style="color: rgb(255, 50, 50);"><b>シーズンマッチとは？</b></span></h2>
 
     <p>
         決まった編成ルールで戦うマッチ！
@@ -71,35 +94,36 @@
     <p></p>
 
     <script>
-        const mdecks = `chd,1
-rlk,1
-fox,1
-trp,1
-kok,1`;
-        const odecks = `mod,1
-tft,1
-ekn,1
-jut,1
-rse,1
-snf,1
-uls,1
-gnk,1
-mas,1
-pst,1
-otd,1
-std,1
+        const mdecks = `jac,1
+usn,1
+atc,1
+tut,1
+otd,1`;
+        const odecks = `leg,1
+gbg,1
+non,1
+kok,1
+xux,1
+alm,1
+ach,1
+niv,1
+dth,1
+lkj,1
+ryu,1
 rsa,1
-tor,1
-sio,2
-tuk,1
-mgs,1
-sun,1
-xvx,1
-idn,1
-kmm,1
-nrn,1
-ndp,1
-rig,1`;
+lmc,1
+drm,1
+eob,1
+oiw,1
+snd,1
+spy,1
+sgj,1
+aed,1
+kae,1
+nzs,1
+trl,1
+jgn,1
+`;
         
     </script>
 

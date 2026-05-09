@@ -18,6 +18,7 @@ $(document).ready(function() {
         .map(line => line.split(",")[0] + ".png")
     let currentCard = null;
     let $coiden = "all";
+    let $seleValue = 'alpha';
 
     function loadImages() {
         $gallerymust.empty();
@@ -29,33 +30,45 @@ $(document).ready(function() {
 
     function loadDeck(deckArray, $target) {
 
-        let excludeJson = null;
+        $.getJSON($JSON_URL + 'card_search.json')
+            .done(function(data) {
+                let cards = data.card;
 
-        if ($coiden === "chara") {
-            excludeJson = "chara.json";
-        }
-        else if ($coiden === "event") {
-            excludeJson = "event.json";
-        }
+            let excludeJson = null;
 
-        if (!excludeJson) {
-            deckArray.forEach(file => {
-                addImage(file, $target);
-            });
-            return;
-        }
+            if ($coiden === "chara") {
+                excludeJson = "chara.json";
+            }
+            else if ($coiden === "event") {
+                excludeJson = "event.json";
+            }
 
-        $.getJSON($BASE_URL + excludeJson)
-            .done(function(excludeData) {
+            if (!excludeJson) {
+                results = applySort(deckArray, cards, $seleValue);
 
-                const excludeSet = new Set(excludeData.images);
-
-                deckArray.forEach(file => {
-                    if (excludeSet.has(file)) {
-                        addImage(file, $target);
-                    }
+                results.forEach(file => {
+                    addImage(file, $target);
                 });
+                return;
+            }
 
+            $.getJSON($BASE_URL + excludeJson)
+                .done(function(excludeData) {
+
+                    const excludeSet = new Set(excludeData.images);
+
+                    results = applySort(deckArray, cards, $seleValue);
+
+                    results.forEach(file => {
+                        if (excludeSet.has(file)) {
+                            addImage(file, $target);
+                        }
+                    });
+
+                });
+            })
+            .fail(function(jqxhr, textStatus, error) {
+                console.error("card_search.json 読み込み失敗:", textStatus, error);
             });
     }
 
@@ -200,6 +213,13 @@ $(document).ready(function() {
         if ($(this).data('folder') === 'all') {
             $coiden = 'all';
         }
+        loadImages();
+    });
+
+    $("#sortselect").on("change", function() {
+
+        $seleValue = $(this).val();
+
         loadImages();
     });
 

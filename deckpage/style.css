@@ -19,7 +19,7 @@ header {
     height: 80px;
     text-align: center;
     font-family: '851Gochikakutto', sans-serif;
-    background: #ec7b1f;
+    background: #000986;
     color: white;
     justify-content: center;
     margin: 0;
@@ -59,12 +59,12 @@ button {
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    background-color: #f39034;
+    background-color: #1c28d1;
     color: white;
 }
 
 button:hover {
-    background-color: #b3580e;
+    background-color: #000658;
 }
 
 .msg {
@@ -92,7 +92,7 @@ button:hover {
 .menu-button {
     width: 80px;
     height: 80px;
-    background: #b3580e;
+    background: #000658;
     color: #fff;
     display: flex;
     align-items: center;
@@ -187,7 +187,7 @@ button:hover {
 }
 
 .cs-btn.active {
-    background: #f39034;
+    background: #1c28d1;
     color: white;
 }
 
@@ -231,7 +231,7 @@ button:hover {
     margin-top:10px;
     display:none;
 
-    background:#f39034;
+    background:#1c28d1;
     color:white;
     padding:8px 16px;
     border-radius:6px;
@@ -242,7 +242,7 @@ button:hover {
 }
 
 #cardDetailBtn:hover{
-    background:#b3580e;
+    background:#000658;
     opacity:1;
 }
 
@@ -272,7 +272,7 @@ button:hover {
 #cardDetailBack{
     margin-top:15px;
     padding:8px 16px;
-    background:#f39034;
+    background:#1c28d1;
     color:white;
     border:none;
     border-radius:6px;
